@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 OUT = ROOT / "site"
 MAX_IMG_W = 1600
-THUMB_W = 640
+THUMB_W = 1100
 OG_W = 1200
 
 # ----------------------------------------------------------------------------
@@ -68,6 +68,10 @@ def ABS(path="/"):
 # ----------------------------------------------------------------------------
 def fmt_date(d):
     return d.strftime("%B %-d, %Y")
+
+
+def fmt_short(d):
+    return d.strftime("%b %-d, %Y")
 
 
 def split_front(text):
@@ -404,7 +408,7 @@ def main():
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
     env.globals.update(U=U, A=A, ABS=ABS, cfg=CFG, noindex=CFG["noindex"], year=dt.date.today().year,
-                       fmt_date=fmt_date)
+                       fmt_date=fmt_date, fmt_short=fmt_short)
     env.filters["tojson_safe"] = lambda v: json.dumps(v, ensure_ascii=False).replace("</", "<\\/")
 
     posts = load_posts()
@@ -439,6 +443,7 @@ def main():
                 t.thumbnail((THUMB_W, THUMB_W * 2), Image.LANCZOS)
                 save_webp(t, out_dir / "thumb.webp", 72)
                 p["thumb"] = "thumb.webp"
+                p["thumb_wh"] = t.size
                 o = im.convert("RGB")
                 o.thumbnail((OG_W, OG_W), Image.LANCZOS)
                 o.save(out_dir / "og.jpg", "JPEG", quality=82, optimize=True)
@@ -496,7 +501,7 @@ def main():
     write("/blog/index.html", env.get_template("blog.html").render(
         posts=posts, years=years, year_counts={y: sum(1 for p in posts if p["year"] == y) for y in years},
         all_tags=all_tags, title=f"Blog — {CFG['site_name']}",
-        description=f"All {len(posts)} essays and reflections on psychology, counseling, and philosophy by Ryan Bohman.",
+        description="Essays and reflections on psychology, counseling, and philosophy by Ryan Bohman.",
         canonical=ABS("/blog/"), og_type="website", og_image=ABS("/assets/og-default.jpg"), nav="blog", path="/blog/"))
     write("/blog/search.json", json.dumps([{"s": p["slug"], "t": p["title"].lower() + " " + p["text"].lower()} for p in posts], ensure_ascii=False, separators=(",", ":")))
 
