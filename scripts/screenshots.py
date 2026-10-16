@@ -14,7 +14,7 @@ MAX_H = 6000   # cap very tall pages (long essays) to the first 6000 css px
 LONG = os.environ.get("LONG_POST", "narcissism-test")
 PAGES = {
     "home": "/",
-    "blog-index": "/blog/",
+    "blog": "/blog/",
     "post-youtube": "/blog/kants-critique-of-pure-reason/",
     "post-long-essay": f"/blog/{LONG}/",
     "post-audio": "/blog/what-is-truth/",
@@ -51,10 +51,15 @@ with sync_playwright() as p:
             pg.wait_for_timeout(500)
             overflow = pg.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
             clip = None
-            full = name not in ("blog-index",)
+            full = name not in ("blog",)
             height = pg.evaluate('document.documentElement.scrollHeight')
-            kw = {'clip': {'x': 0, 'y': 0, 'width': w, 'height': MAX_H}, 'full_page': True} if height > MAX_H else {'full_page': True}
-            pg.screenshot(path=str(SHOTS / f"{name}-{label}.png"), **kw)
+            if height > MAX_H:
+                # tall pages: grow the viewport instead of a clipped full-page capture (avoids sticky-header artefacts)
+                pg.set_viewport_size({"width": w, "height": MAX_H}); pg.evaluate("window.scrollTo(0,0)"); pg.wait_for_timeout(800)
+                pg.screenshot(path=str(SHOTS / f"{name}-{label}.png"))
+                pg.set_viewport_size({"width": w, "height": h})
+            else:
+                pg.screenshot(path=str(SHOTS / f"{name}-{label}.png"), full_page=True)
             if overflow > 0:
                 print(f"HORIZONTAL OVERFLOW {overflow}px on {name} ({label})")
         ctx.close()

@@ -6,7 +6,7 @@
   var q = document.getElementById('q');
   var status = document.getElementById('status');
   var empty = document.getElementById('empty');
-  var rows = [].slice.call(document.querySelectorAll('.row'));
+  var rows = [].slice.call(document.querySelectorAll('.card[data-slug]'));
   var groups = [].slice.call(document.querySelectorAll('.year-group'));
   var yearBtns = [].slice.call(box.querySelectorAll('[data-year]'));
   var tagBtns = [].slice.call(box.querySelectorAll('[data-tag]'));
@@ -28,7 +28,7 @@
                terms.every(function (t) { return (hay || r.getAttribute('data-text')).indexOf(t) > -1; });
       r.hidden = !ok; if (ok) shown++;
     });
-    groups.forEach(function (g) { g.hidden = !g.querySelector('.row:not([hidden])'); });
+    groups.forEach(function (g) { g.hidden = !g.querySelector('.card:not([hidden])'); });
     empty.hidden = shown > 0;
     status.textContent = (terms.length || year !== 'all' || tag) ? shown + (shown === 1 ? ' post' : ' posts') + ' shown' : '';
   }

@@ -1,5 +1,5 @@
-{% macro card(p) %}
-<article class="card">
+{% macro card(p, filterable=False) %}
+<article class="card"{% if filterable %} data-slug="{{ p.slug }}" data-year="{{ p.year }}" data-tags="{{ p.tags|join('|') }}" data-text="{{ (p.title ~ ' ' ~ p.excerpt)|lower }}"{% endif %}>
   <a class="card__media" href="{{ U(p.url) }}" tabindex="-1" aria-hidden="true">
     {% if p.thumb %}<img src="{{ U(p.url + p.thumb) }}" alt="" width="640" height="{{ (640 * p.image_wh[1] / p.image_wh[0]) | round | int }}" loading="lazy" decoding="async">
     {% else %}<span class="card__placeholder"><svg aria-hidden="true"><use href="#sun"/></svg></span>{% endif %}
