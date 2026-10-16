@@ -8,6 +8,7 @@
   "site_origin": "https://www.gnosis.health",
   "base_path": "",
   "noindex": false,
+  "ga_measurement_id": "",
   "meetups": [
     {"name": "NYC Philosophy and Psychology Reading Community", "place": "New York City", "url": "https://www.meetup.com/reading-philosophy/"},
     {"name": "Philosophy Café", "place": "Rochester, NY", "url": "https://www.meetup.com/philosophy-cafe-in-rochester-ny/"}

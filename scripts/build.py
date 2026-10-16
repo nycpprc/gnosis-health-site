@@ -42,6 +42,9 @@ if "SITE_ORIGIN" in os.environ:
     CFG["site_origin"] = os.environ["SITE_ORIGIN"]
 if "NOINDEX" in os.environ:
     CFG["noindex"] = os.environ["NOINDEX"].strip().lower() in ("1", "true", "yes", "on")
+GA_ID = os.environ.get("GA_MEASUREMENT_ID", CFG.get("ga_measurement_id", "")).strip()
+if GA_ID and not re.fullmatch(r"G-[A-Z0-9]{6,14}", GA_ID):
+    raise SystemExit(f"ga_measurement_id {GA_ID!r} does not look like a GA4 id (G-XXXXXXXXXX)")
 BASE = "/" + CFG["base_path"].strip("/") if CFG["base_path"].strip("/") else ""
 ORIGIN = CFG["site_origin"].rstrip("/")
 
@@ -401,13 +404,15 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    if not GA_ID:                           # analytics disabled: ship no consent code at all
+        (OUT / "assets" / "js" / "consent.js").unlink(missing_ok=True)
     for f in ("favicon.ico", "favicon.svg", "apple-touch-icon.png"):
         if (ROOT / "assets" / "icons" / f).exists():
             shutil.copy2(ROOT / "assets" / "icons" / f, OUT / f)
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
-    env.globals.update(U=U, A=A, ABS=ABS, cfg=CFG, noindex=CFG["noindex"], year=dt.date.today().year,
+    env.globals.update(U=U, A=A, ABS=ABS, cfg=CFG, ga_id=GA_ID, noindex=CFG["noindex"], year=dt.date.today().year,
                        fmt_date=fmt_date, fmt_short=fmt_short)
     env.filters["tojson_safe"] = lambda v: json.dumps(v, ensure_ascii=False).replace("</", "<\\/")
 
@@ -471,19 +476,20 @@ def main():
         pg["html"] = render_md(pg["body"], CONTENT / "pages", out_dir, f"page:{slug}", known_paths, alias_map)
         return pg, out_dir
 
-    for slug in ("about", "contact", "doing-business"):
+    for slug in ("about", "contact", "doing-business") + (("privacy",) if GA_ID else ()):
         pg, out_dir = page_ctx(slug)
         h1 = pg["fm"].get("heading") or pg["fm"]["title"]
         desc = {
             "about": "About Ryan Bohman and Gnosis Health: counseling, research, and philosophy book clubs.",
             "contact": "Contact Ryan Bohman at Gnosis Health in Rochester, NY.",
             "doing-business": "Working together: Ryan Bohman's interests in mental health and technology ventures, plus his resume.",
+            "privacy": "Privacy: this site counts visits with Google Analytics only if you accept. No ads, no personal data collected.",
         }[slug]
-        nav = {"about": "about", "contact": "contact", "doing-business": "work"}[slug]
+        nav = {"about": "about", "contact": "contact", "doing-business": "work", "privacy": None}[slug]
         write(f"/{slug}/index.html", env.get_template("page.html").render(
             pg=pg, h1=h1, title=f"{pg['fm']['title']} — {CFG['site_name']}", description=desc,
             canonical=ABS(f"/{slug}/"), og_type="website", og_image=ABS("/assets/og-default.jpg"), nav=nav, path=f"/{slug}/",
-            eyebrow={"about": "About", "contact": "Get in touch", "doing-business": "Working together"}[slug]))
+            eyebrow={"about": "About", "contact": "Get in touch", "doing-business": "Working together", "privacy": "Privacy"}[slug]))
 
     # home
     hp, hdir = page_ctx("home")
@@ -511,7 +517,7 @@ def main():
                                                            canonical=ABS("/"), og_type="website", og_image=ABS("/assets/og-default.jpg"), nav=None, path="/404.html"))
 
     # ---- sitemap / robots
-    urls = [("/", posts[0]["date"]), ("/blog/", posts[0]["date"]), ("/about/", None), ("/doing-business/", None), ("/contact/", None)]
+    urls = [("/", posts[0]["date"]), ("/blog/", posts[0]["date"]), ("/about/", None), ("/doing-business/", None), ("/contact/", None)] + ([("/privacy/", None)] if GA_ID else [])
     urls += [(p["url"], p["date"]) for p in posts]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u, d in urls:
