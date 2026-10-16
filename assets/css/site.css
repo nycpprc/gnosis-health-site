@@ -112,10 +112,9 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .hero { overflow-x: clip; overflow-y: visible; color: #FFFFFF; } /* y visible so citation popovers can extend below the hero */
 .hero__sky { padding-bottom: 0; }
 .hero__sky { background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-2) 36%, var(--sky-3) 62%, var(--sky-4) 82%, var(--sky-5) 94%, var(--cream) 100%); display: flex; flex-direction: column; }
-.hero__text { text-align: center; padding: clamp(3rem, 8vw, 6rem) 0 1rem; position: relative; z-index: 2; }
-.hero__eyebrow { font-family: var(--serif-head); font-style: italic; font-size: 1.35rem; letter-spacing: .12em; color: #CFE5FB; margin: 0 0 .5rem; }
+.hero__text { text-align: center; padding: clamp(4rem, 10vw, 7.5rem) 0 1rem; position: relative; z-index: 2; }
 .hero h1 { color: #FFFFFF; font-size: clamp(3rem, 9vw, 5.6rem); font-weight: 500; letter-spacing: .01em; }
-.hero__tagline { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: #E6F1FC; margin: 1rem auto 0; max-width: 56ch; font-style: italic; line-height: 1.5; text-wrap: balance; }
+.hero__tagline { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: #E6F1FC; margin: 1.3rem auto 0; max-width: 56ch; font-style: italic; line-height: 1.5; text-wrap: balance; }
 .hero__cta { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; margin: 0; }
 .hero__horizon { position: relative; height: clamp(190px, 28vw, 300px); margin-top: -.5rem; }
 .hero__sun { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: clamp(360px, 46vw, 560px); pointer-events: none; }
@@ -242,7 +241,6 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 @media print { .site-header, .site-footer, .filters, .skip-link { display: none; } body { background: #fff; color: #000; } }
 
 /* Greek word in eyebrow keeps its lower-case polytonic form */
-.eyebrow [lang="grc"] { text-transform: none; letter-spacing: .06em; font-family: var(--serif-head); font-style: italic; font-size: 1.15rem; font-weight: 500; }
 
 .hero__def { margin-bottom: 1.8rem; }
 .hero__caption { position: relative; margin: 0 auto; padding: 1.4rem 0 .5rem; text-align: center; color: var(--ink); }
