@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block bodyclass %}blog{% endblock %}
+{% block main %}
+<section class="wrap narrow page-head">
+  <p class="eyebrow">Blog</p>
+  <h1>Writing</h1>
+  <p class="lead">{{ posts|length }} essays, reflections, and notes on psychology, counseling, and philosophy, newest first.</p>
+</section>
+
+<section class="wrap narrow filters" id="filters" data-search-url="{{ U('/blog/search.json') }}" hidden>
+  <form role="search" onsubmit="return false">
+    <label for="q" class="visually-hidden">Search posts</label>
+    <input id="q" type="search" placeholder="Search titles and text…" autocomplete="off">
+  </form>
+  <div class="chips" role="group" aria-label="Filter by year">
+    <button type="button" class="chip" data-year="all" aria-pressed="true">All</button>
+    {% for y in years %}<button type="button" class="chip" data-year="{{ y }}" aria-pressed="false">{{ y }} <span>{{ year_counts[y] }}</span></button>{% endfor %}
+  </div>
+  {% if all_tags %}
+  <div class="chips" role="group" aria-label="Filter by tag">
+    {% for t in all_tags %}<button type="button" class="chip chip--tag" data-tag="{{ t }}" aria-pressed="false">{{ t }}</button>{% endfor %}
+  </div>
+  {% endif %}
+  <p class="filter-status" id="status" role="status" aria-live="polite"></p>
+</section>
+
+<div class="wrap narrow post-list" id="post-list">
+{% for y in years %}
+  <section class="year-group" data-year-group="{{ y }}" aria-labelledby="y{{ y }}">
+    <h2 class="year-title" id="y{{ y }}">{{ y }}</h2>
+    <ol class="rows">
+    {% for p in posts if p.year == y %}
+      <li class="row" data-slug="{{ p.slug }}" data-year="{{ p.year }}" data-tags="{{ p.tags|join('|') }}" data-text="{{ (p.title ~ ' ' ~ p.excerpt)|lower }}">
+        {% if p.thumb %}<a class="row__thumb" href="{{ U(p.url) }}" tabindex="-1" aria-hidden="true"><img src="{{ U(p.url + p.thumb) }}" alt="" width="640" height="{{ (640 * p.image_wh[1] / p.image_wh[0]) | round | int }}" loading="lazy" decoding="async"></a>{% endif %}
+        <div class="row__body">
+          <p class="meta"><time datetime="{{ p.date.isoformat() }}">{{ fmt_date(p.date) }}</time> · {{ p.minutes }} min read</p>
+          <h3 class="row__title"><a href="{{ U(p.url) }}">{{ p.title }}</a></h3>
+          <p class="row__excerpt">{{ p.excerpt }}</p>
+        </div>
+      </li>
+    {% endfor %}
+    </ol>
+  </section>
+{% endfor %}
+</div>
+<p class="wrap narrow empty" id="empty" hidden>No posts match that search. Try fewer words, or clear the filters.</p>
+{% endblock %}
+{% block scripts %}<script src="{{ U('/assets/js/filter.js') }}" defer></script>{% endblock %}

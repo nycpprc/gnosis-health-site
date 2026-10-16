@@ -1,0 +1,13 @@
+{% macro card(p) %}
+<article class="card">
+  <a class="card__media" href="{{ U(p.url) }}" tabindex="-1" aria-hidden="true">
+    {% if p.thumb %}<img src="{{ U(p.url + p.thumb) }}" alt="" width="640" height="{{ (640 * p.image_wh[1] / p.image_wh[0]) | round | int }}" loading="lazy" decoding="async">
+    {% else %}<span class="card__placeholder"><svg aria-hidden="true"><use href="#sun"/></svg></span>{% endif %}
+  </a>
+  <div class="card__body">
+    <p class="meta"><time datetime="{{ p.date.isoformat() }}">{{ fmt_date(p.date) }}</time> · {{ p.minutes }} min read</p>
+    <h3 class="card__title"><a href="{{ U(p.url) }}">{{ p.title }}</a></h3>
+    <p class="card__excerpt">{{ p.excerpt }}</p>
+  </div>
+</article>
+{% endmacro %}

@@ -1,0 +1,28 @@
+---
+title: Is Psychological Research Valuable?
+date: '2024-07-15'
+slug: is-psychological-research-valuable
+image: images/image-18.webp
+---
+
+I created this paper for my graduate research methods class at the University of Rochester. The professor asked us to read, [Chapter 1, “Thinking in Print,” of The Craft of Research, by Booth, Colomb, and Williams (2008)](https://www.amazon.com/Research-Chicago-Writing-Editing-Publishing/dp/0226826678/) and provide a critical analysis. I have included my analysis below.
+
+**Is Psychological Research Valuable?**
+
+This week, I chose to comment on Booth's (2016) Chapter 1, Thinking in Print: The Uses of Research, Public & Private. In this piece, I see Booth aiming to argue why research is objectively valuable. Booth educates us that people devote their lives to research, that it's the world's biggest industry, that it happens in all sorts of diverse settings, and that it has a lineage extending back some 2500 years.
+
+After expounding on the benefits Booth sees in research, he takes a cautionary stance to warn us of the perils that await us if we do not follow his advice: "Without trustworthy published research, we all would be locked in the opinions of the moment, prisoners of what we alone experience or dupes to whatever we're told." Moreover, "as recent events have shown, those who act on unreliable evidence can lead us— indeed have led us— into disaster."
+
+For Booth, a world not heeding research leads to disaster. Strong words, indeed. Booth celebrates research as "the oldest and most esteemed of human conversations." Then, he intimates that a student should remain silent, listen to teachers of research, and only enter the conversation once they have spent enough time learning (being indoctrinated by) current research.
+
+Booth then makes claims affirming the benefits of writing. Writing improves our thought: "we write not just to share our work, but to improve it before we do." According to Booth, writing also helps us remember, understand, and better test our opinions on others, as foils. Booth then tells us why it is essential to conform to the writing conventions of established academic communities because the conventions have evolved to serve the purpose of each community: "The various genres of research-based writing—the research paper, the scholarly article, the research report, the conference paper, the legal brief, and a great many others— have evolved to meet the needs of the communities that use them."
+
+When I think of human knowledge, I can think of times when it did not prevent danger but caused danger. I refer to knowledge such as that which created weapons to kill, such as guns or nuclear bombs. We now see knowledge that was considered valid in the past as unethical, for example, the Tuskegee Syphilis Study or the Stanford Prison Experiment. Or scientific practices like lobotomies, bloodletting, or hysteria treatment. Alternatively, the science that considered groups of people as sub-human, such as eugenics, scientific racism, or gay conversion therapy.
+
+Individuals such as Socrates, Jesus, Galileo, Voltaire, and Alan Turing were chastised by the leaders of their time for creating some of the greatest works of thought. Many great thinkers famously did not write anything down or read any research. In today's world, people may use research as a weapon to promote fixed views, instead of true open inquiry. What if empathy, not just research, is required as a first step to freeing ourselves from personal opinion? How can we develop our own capacity for empathy for others? Booth also encourages the student to remain quiet and listen to the teacher. What if knowledge is not something that can be taught by a teacher but needs to be learned by a student, at their own pace, in their own way, interactively rather than didactically?
+
+Booth claims writing is a beneficial way to organize, clarify, and share thoughts to improve them. However, what about the 296,500 years homosapiens have been around without writing? What about oral traditions or learning through acting instead of written instruction? What about the "school of life"? Moreover, how does writing limit meaning to exist within only one cultural paradigm? Or how does writing encourage rote learning, memorization, and conformity instead of ingenuity and personal innovation? Or how does writing separate us from human connection and remove the ability for interactivity?
+
+We could contrast writing with art, for example, art has a much broader context and vocabulary of expression. Writing, especially when it conforms to conventions as Booth requests, limits expression solely to the conscious realm, discounting much of unconscious human existence. It reminds me of Nietzsche's project in Gay Science, which strove to prove that serious thinking need not be stodgy and scientific. This idea culminated in his later works in proposing that the scientific method is no longer a pure quest for truth. We could also contrast research and formal writing with storytelling by elders in oral traditions. Oral traditions also share information but do so in a way that creates human connection and interactivity and prioritizes feeling and lived experience in harmony with a natural environment.
+
+I am being harsh on Booth overall. Personally, I have gained so much from reading, including research, and from using writing to enhance ideas and connect with others. However, Booth's view seems limited to me, and appears as a one-sided praise of research and writing. In my writing I wanted to try and illuminate the opposing view, whilst also validating Booth’s views.

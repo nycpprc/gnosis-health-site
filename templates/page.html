@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block bodyclass %}page page--{{ pg.slug }}{% endblock %}
+{% block main %}
+<article class="wrap narrow">
+  <header class="page-head">
+    <p class="eyebrow">{{ eyebrow }}</p>
+    <h1>{{ h1 }}</h1>
+  </header>
+  <div class="prose">{{ pg.html|safe }}</div>
+</article>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block bodyclass %}post{% endblock %}
+{% block head %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"datePublished":post.date.isoformat(),"author":{"@type":"Person","name":cfg.author},"mainEntityOfPage":canonical,"description":description}|tojson_safe }}</script>
+{% endblock %}
+{% block main %}
+<article class="post-article">
+  <header class="wrap narrow post-head">
+    <p class="crumb"><a href="{{ U('/blog/') }}">← Back to blog</a></p>
+    <p class="meta"><time datetime="{{ post.date.isoformat() }}">{{ fmt_date(post.date) }}</time> · {{ post.minutes }} min read</p>
+    <h1>{{ post.title }}</h1>
+    {% if post.tags %}<ul class="tags" aria-label="Tags">{% for t in post.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+  </header>
+  {% if post.image %}
+  <figure class="wrap post-hero">
+    <img src="{{ post.image }}" alt="" width="{{ post.image_wh[0] }}" height="{{ post.image_wh[1] }}" decoding="async" fetchpriority="high">
+  </figure>
+  {% endif %}
+  <div class="wrap narrow">
+    <div class="prose">{{ post.html|safe }}</div>
+    <p class="byline">Written by {{ cfg.author }}.</p>
+  </div>
+  <nav class="wrap post-nav" aria-label="More posts">
+    {% if older %}<a class="post-nav__link post-nav__prev" href="{{ U(older.url) }}" rel="prev"><span class="post-nav__label">← Older</span><span class="post-nav__title">{{ older.title }}</span></a>{% else %}<span></span>{% endif %}
+    {% if newer %}<a class="post-nav__link post-nav__next" href="{{ U(newer.url) }}" rel="next"><span class="post-nav__label">Newer →</span><span class="post-nav__title">{{ newer.title }}</span></a>{% else %}<span></span>{% endif %}
+  </nav>
+  <p class="wrap narrow back-bottom"><a class="arrow-link arrow-link--back" href="{{ U('/blog/') }}">Back to blog</a></p>
+</article>
+{% endblock %}

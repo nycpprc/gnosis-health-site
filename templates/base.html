@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ cfg.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+{% if noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FBF5E6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14172F" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{ canonical }}">
+<link rel="icon" href="{{ U('/favicon.svg') }}" type="image/svg+xml">
+<link rel="icon" href="{{ U('/favicon.ico') }}" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ U('/apple-touch-icon.png') }}">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.site_name }}" href="{{ U('/feed.xml') }}">
+<meta property="og:site_name" content="{{ cfg.site_name }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:title" content="{{ page_title or title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ canonical }}">
+{% if og_image %}<meta property="og:image" content="{{ og_image }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+{% if published %}<meta property="article:published_time" content="{{ published }}">
+<meta property="article:author" content="{{ cfg.author }}">{% endif %}
+<link rel="preload" href="{{ U('/assets/fonts/SourceSerif4-normal-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ U('/assets/fonts/EBGaramond-normal-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ U('/assets/css/fonts.css') }}">
+<link rel="stylesheet" href="{{ U('/assets/css/site.css') }}">
+{% block head %}{% endblock %}
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="sun" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="11" fill="currentColor"/>
+    <g stroke="currentColor" stroke-width="3.4" stroke-linecap="round">
+      <path d="M32.0 13.0L32.0 3.0 M45.4 18.6L52.5 11.5 M51.0 32.0L61.0 32.0 M45.4 45.4L52.5 52.5 M32.0 51.0L32.0 61.0 M18.6 45.4L11.5 52.5 M13.0 32.0L3.0 32.0 M18.6 18.6L11.5 11.5"/>
+      <path stroke-width="2.6" d="M39.7 13.5L42.1 7.5 M50.5 24.3L56.5 21.9 M50.5 39.7L56.5 42.1 M39.7 50.5L42.1 56.5 M24.3 50.5L21.9 56.5 M13.5 39.7L7.5 42.1 M13.5 24.3L7.5 21.9 M24.3 13.5L21.9 7.5"/>
+    </g>
+  </symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ U('/') }}" aria-label="{{ cfg.site_name }} — home">
+      <svg class="brand__mark" aria-hidden="true"><use href="#sun"/></svg>
+      <span class="brand__name">Gnosis <span>Health</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="{{ U('/blog/') }}"{% if nav == 'blog' %} aria-current="page"{% endif %}>Blog</a>
+      <a href="{{ U('/about/') }}"{% if nav == 'about' %} aria-current="page"{% endif %}>About</a>
+      <a href="{{ U('/doing-business/') }}"{% if nav == 'work' %} aria-current="page"{% endif %}>Work with me</a>
+      <a href="{{ U('/contact/') }}"{% if nav == 'contact' %} aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="{{ U('/') }}">
+        <svg class="brand__mark" aria-hidden="true"><use href="#sun"/></svg>
+        <span class="brand__name">Gnosis <span>Health</span></span>
+      </a>
+      <p>{{ cfg.tagline }}.</p>
+    </div>
+    <div>
+      <h2 class="footer-h">Explore</h2>
+      <ul class="footer-list">
+        <li><a href="{{ U('/blog/') }}">Blog</a></li>
+        <li><a href="{{ U('/about/') }}">About</a></li>
+        <li><a href="{{ U('/doing-business/') }}">Work with me</a></li>
+        <li><a href="{{ U('/contact/') }}">Contact</a></li>
+        <li><a href="{{ U('/feed.xml') }}">RSS feed</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-h">Reading groups on Meetup</h2>
+      <ul class="footer-list">
+        {% for m in cfg.meetups %}
+        <li><a href="{{ m.url }}" rel="noopener">{{ m.place }}</a><span class="footer-sub">{{ m.name }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© {{ year }} {{ cfg.author }}. All rights reserved.</p>
+  </div>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% from "card.html" import card %}
+{% block bodyclass %}home{% endblock %}
+{% block main %}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__sky">
+    <div class="wrap hero__text">
+      <p class="hero__eyebrow" lang="grc">γνῶσις</p>
+      <h1 id="hero-title">Gnosis Health</h1>
+      <p class="hero__tagline">{{ cfg.tagline }}.</p>
+      <p class="hero__cta">
+        <a class="btn btn--sun" href="{{ U('/blog/') }}">Read the blog</a>
+        <a class="btn btn--ghost" href="{{ U('/about/') }}">About me</a>
+      </p>
+    </div>
+    <div class="hero__horizon" aria-hidden="true">
+      <svg class="hero__sun" viewBox="-500 -500 1000 500" preserveAspectRatio="xMidYMax meet">
+        <defs>
+          <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#FFE9A8" stop-opacity=".9"/>
+            <stop offset=".3" stop-color="#F6C453" stop-opacity=".5"/>
+            <stop offset="1" stop-color="#F6C453" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="disc" x1="0" y1="-1" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFF1BF"/><stop offset="1" stop-color="#F2B33D"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(0,-34)"><circle cx="0" cy="0" r="460" fill="url(#glow)"/>
+        <g class="rays" stroke="#FBE3A0" stroke-linecap="round" fill="none">
+          {% for i in range(-8, 9) %}
+          {% set a = i * 10.5 %}
+          <line x1="0" y1="-118" x2="0" y2="{{ -(150 + (28 if i % 2 == 0 else 8)) }}" transform="rotate({{ a }})" stroke-width="{{ 3 if i % 2 == 0 else 2 }}" opacity="{{ 0.8 if i % 2 == 0 else 0.5 }}"/>
+          {% endfor %}
+        </g>
+        <circle cx="0" cy="0" r="96" fill="url(#disc)"/></g>
+      </svg>
+      <div class="hero__ground"></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap intro" aria-labelledby="intro-title">
+  <div class="intro__text">
+    <p class="eyebrow">{{ pg.fm.heading or 'Welcome' }}</p>
+    <h2 id="intro-title" class="intro__title">Knowledge, brought into the light.</h2>
+    <div class="prose prose--lead">{{ pg.html|safe }}</div>
+    <p class="intro__more"><a class="arrow-link" href="{{ U('/about/') }}">More about me</a> <a class="arrow-link" href="{{ U('/doing-business/') }}">Work with me</a></p>
+  </div>
+  {% if hero_img %}
+  <figure class="intro__image">
+    <img src="{{ hero_img }}" alt="{{ pg.fm.image_alt }}" width="{{ hero_wh[0] }}" height="{{ hero_wh[1] }}" loading="lazy" decoding="async">
+  </figure>
+  {% endif %}
+</section>
+
+<section class="wrap latest" aria-labelledby="latest-title">
+  <div class="section-head">
+    <h2 id="latest-title">Latest writing</h2>
+    <a class="arrow-link" href="{{ U('/blog/') }}">All {{ total }} posts</a>
+  </div>
+  <div class="card-grid">
+    {% for p in latest %}{{ card(p) }}{% endfor %}
+  </div>
+</section>
+
+<section class="wrap band" aria-labelledby="band-title">
+  <div class="band__inner">
+    <svg class="band__mark" aria-hidden="true"><use href="#sun"/></svg>
+    <div>
+      <h2 id="band-title">Working together</h2>
+      <p>I’m interested in partnering with ventures at the intersection of mental health and technology. See what I’m looking for, and my resume.</p>
+    </div>
+    <a class="btn btn--sun" href="{{ U('/doing-business/') }}">Work with me</a>
+  </div>
+</section>
+{% endblock %}
