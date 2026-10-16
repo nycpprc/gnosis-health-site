@@ -127,7 +127,6 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 
 /* ---------- home sections ---------- */
 
-.latest { margin-top: clamp(3.5rem, 8vw, 6rem); }
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.8rem; border-bottom: 1px solid var(--rule); padding-bottom: .9rem; }
 .section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.4rem); }
 .section-head .arrow-link { margin-right: 0; }
@@ -250,10 +249,6 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .hero__caption blockquote { margin: 0 auto; max-width: none; }
 .hero__caption p { font-family: var(--serif-head); font-style: italic; font-size: clamp(1.05rem, 2.1vw, 1.65rem); line-height: 1.4; margin: 0; text-wrap: pretty; color: var(--ink); }
 
-/* "View all posts" link under the home cards */
-.latest__more { text-align: center; margin: clamp(2rem, 4vw, 2.8rem) 0 0; font-family: var(--sans); font-size: .98rem; font-weight: 600; }
-.latest__more a { color: var(--link); text-decoration: none; padding: .35rem .2rem; border-bottom: 1px solid transparent; transition: border-color .15s ease; }
-.latest__more a:hover, .latest__more a:focus-visible { border-bottom-color: currentColor; }
 
 /* blog index: wide card grid + filters aligned to it */
 .blog .year-title { margin-top: 2.4rem; margin-bottom: 1.4rem; }
@@ -274,3 +269,5 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .hero__def .cite__btn:hover, .hero__def .cite__btn:focus-visible { color: #fff; }
 .cite__pop--up { top: auto; bottom: calc(100% + .55rem); }
 .cite__pop--up::before { top: auto; bottom: -.7rem; }
+
+.page-note { font-family: var(--sans); font-size: .85rem; color: var(--ink-soft); margin: .9rem 0 0; opacity: .95; }

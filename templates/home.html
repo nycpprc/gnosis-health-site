@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% from "card.html" import card %}
 {% block bodyclass %}home{% endblock %}
 {% block main %}
 <section class="hero" aria-labelledby="hero-title">
@@ -46,16 +45,6 @@
   </figure>
 </section>
 
-<section class="wrap latest" aria-labelledby="latest-title">
-  <div class="section-head">
-    <h2 id="latest-title">Latest writing</h2>
-    <a class="arrow-link" href="{{ U('/blog/') }}">All {{ total }} posts</a>
-  </div>
-  <div class="card-grid">
-    {% for p in latest %}{{ card(p) }}{% endfor %}
-  </div>
-  <p class="latest__more"><a href="{{ U('/blog/') }}">View all posts on the blog <span aria-hidden="true">→</span></a></p>
-</section>
 
 {% endblock %}
 {% block scripts %}<script src="{{ U('/assets/js/cite.js') }}" defer></script>{% endblock %}
