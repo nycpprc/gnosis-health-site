@@ -114,7 +114,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .hero__text { text-align: center; padding: clamp(3rem, 8vw, 6rem) 0 1rem; position: relative; z-index: 2; }
 .hero__eyebrow { font-family: var(--serif-head); font-style: italic; font-size: 1.35rem; letter-spacing: .12em; color: #CFE5FB; margin: 0 0 .5rem; }
 .hero h1 { color: #FFFFFF; font-size: clamp(3rem, 9vw, 5.6rem); font-weight: 500; letter-spacing: .01em; }
-.hero__tagline { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: #E6F1FC; margin: 1rem auto 1.8rem; max-width: 52ch; font-style: italic; line-height: 1.5; text-wrap: balance; }
+.hero__tagline { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: #E6F1FC; margin: 1rem auto 0; max-width: 56ch; font-style: italic; line-height: 1.5; text-wrap: balance; }
 .hero__cta { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; margin: 0; }
 .hero__horizon { position: relative; height: clamp(190px, 28vw, 300px); margin-top: -.5rem; }
 .hero__sun { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: clamp(360px, 46vw, 560px); pointer-events: none; }
@@ -125,17 +125,6 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 }
 
 /* ---------- home sections ---------- */
-.intro { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; padding-top: clamp(2.5rem, 6vw, 4.5rem); }
-.def { margin: 0; padding: 0; }
-.def p { font-family: var(--serif-head); font-size: clamp(1.45rem, 2.6vw, 1.9rem); line-height: 1.38; margin: 0 0 1em; color: var(--ink); text-wrap: pretty; }
-.def p + p { font-size: clamp(1.15rem, 2vw, 1.35rem); color: var(--ink-soft); font-style: italic; }
-.def__source { font-family: var(--sans); font-size: .8rem; color: var(--ink-soft); }
-.def__source a { color: var(--ink-soft); }
-.prose--lead { font-size: 1.28rem; line-height: 1.65; }
-.prose--lead p { margin: 0; }
-.intro__text { padding: 1.6rem 1.8rem 1.8rem; background: var(--paper); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow); }
-.intro__more { margin: 1.4rem 0 0; }
-@media (max-width: 860px) { .intro { grid-template-columns: 1fr; } }
 
 .latest { margin-top: clamp(3.5rem, 8vw, 6rem); }
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.8rem; border-bottom: 1px solid var(--rule); padding-bottom: .9rem; }
@@ -266,3 +255,8 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 
 /* Greek word in eyebrow keeps its lower-case polytonic form */
 .eyebrow [lang="grc"] { text-transform: none; letter-spacing: .06em; font-family: var(--serif-head); font-style: italic; font-size: 1.15rem; font-weight: 500; }
+
+.hero__def { margin-bottom: 1.8rem; }
+.hero__tagline--second { margin-top: .8rem; font-size: clamp(1rem, 2vw, 1.2rem); color: #D3E6FA; }
+.hero__source { font-family: var(--sans); font-size: .8rem; color: #CFE3F8; margin: 1rem 0 0; }
+.hero__source a { color: #FFFFFF; text-decoration-color: rgba(255,255,255,.55); }

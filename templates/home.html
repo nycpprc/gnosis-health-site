@@ -7,10 +7,14 @@
     <div class="wrap hero__text">
       <p class="hero__eyebrow" lang="grc">γνῶσις</p>
       <h1 id="hero-title">Gnosis Health</h1>
-      <p class="hero__tagline">Gnosis is a feminine Greek noun which means “knowledge” or “awareness.”</p>
+      <div class="hero__def">
+        <p class="hero__tagline">Gnosis is a feminine Greek noun which means “knowledge” or “awareness.” It is often used for personal knowledge as opposed to intellectual knowledge.</p>
+        <p class="hero__tagline hero__tagline--second">Gnosis, however, is often associated with experiential, intuitive, or spiritual understanding rather than empirical or logical deduction.</p>
+        <p class="hero__source">Source: <a href="https://en.wikipedia.org/wiki/Gnosis" rel="noopener">Wikipedia, “Gnosis”</a></p>
+      </div>
       <p class="hero__cta">
         <a class="btn btn--primary" href="{{ U('/blog/') }}">Read the blog</a>
-        <a class="btn btn--ghost" href="{{ U('/about/') }}">About me</a>
+        <a class="btn btn--ghost" href="{{ U('/about/') }}">About</a>
       </p>
     </div>
     <div class="hero__horizon" aria-hidden="true">
@@ -36,22 +40,6 @@
       </svg>
       <div class="hero__ground"></div>
     </div>
-  </div>
-</section>
-
-<section class="wrap intro" aria-labelledby="intro-title">
-  <div class="intro__def">
-    <p class="eyebrow" id="intro-title"><span lang="grc">γνῶσις</span></p>
-    <blockquote class="def">
-      <p>Gnosis is a feminine Greek noun which means “knowledge” or “awareness.” It is often used for personal knowledge as opposed to intellectual knowledge.</p>
-      <p>Gnosis, however, is often associated with experiential, intuitive, or spiritual understanding rather than empirical or logical deduction.</p>
-      <footer class="def__source">Source: <a href="https://en.wikipedia.org/wiki/Gnosis" rel="noopener">Wikipedia, “Gnosis”</a></footer>
-    </blockquote>
-  </div>
-  <div class="intro__text">
-    <p class="eyebrow">{{ pg.fm.heading or 'Welcome' }}</p>
-    <div class="prose prose--lead">{{ pg.html|safe }}</div>
-    <p class="intro__more"><a class="arrow-link" href="{{ U('/about/') }}">More about me</a> <a class="arrow-link" href="{{ U('/doing-business/') }}">Work with me</a></p>
   </div>
 </section>
 
