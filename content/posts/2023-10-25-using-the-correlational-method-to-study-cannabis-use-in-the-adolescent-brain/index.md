@@ -29,7 +29,7 @@ The results of the correlational method were valuable in addressing the hypothes
 
 **References**
 
-Albaugh, M. D., Ottino-Gonzalez, J., et al. (2021). Association of cannabis use during adolescence with neurodevelopment. \*JAMA Psychiatry, 78\*(9), 1031-1040. <https://doi.org/10.1001/jamapsychiatry.2021.1932>
+Albaugh, M. D., Ottino-Gonzalez, J., et al. (2021). Association of cannabis use during adolescence with neurodevelopment. \*JAMA Psychiatry, 78\*(9), 1031-1040. <https://doi.org/10.1001/jamapsychiatry.2021.1258>
 
 Caron, C. (2022, June 23). Psychosis, addiction, chronic vomiting: As weed becomes more potent, teens are getting sick. \*The New York Times\*. Updated 2023, June 22. <https://www.nytimes.com/2022/06/23/well/mind/teens-thc-cannabis.html>
 

@@ -37,7 +37,7 @@ Dukes, D., Abrams, K., Adolphs, R., Ahmed, M. E., Beatty, A., Berridge, K. C., B
 
 Fosha, D. (2000). *The transforming power of affect: A model for accelerated change*. Basic Books.
 
-Greenberg, L. S. (2006). Emotion-focused therapy: A synopsis. *Journal of Contemporary Psychotherapy, 36*(2), 87–93. <https://doi.org/10.1007/s10879-006-9001-3>
+Greenberg, L. S. (2006). Emotion-focused therapy: A synopsis. *Journal of Contemporary Psychotherapy, 36*(2), 87–93. <https://doi.org/10.1007/s10879-006-9011-3>
 
 Knapp, P., Kieling, C., & Beck, A. T. (2015). What do psychotherapists do? A systematic review and meta-regression of surveys. *Psychotherapy and Psychosomatics, 84*(6), 377–378. <https://doi.org/10.1159/000433555>
 

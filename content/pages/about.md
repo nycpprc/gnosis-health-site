@@ -5,7 +5,7 @@ slug: about
 
 My name is Ryan Bohman, and I created this website, Gnosis Health, to allow individuals to connect with my current work and interests.
 
-Some thing that keep me busy:
+Some things that keep me busy:
 
 - **Counseling:** I have a small client load as I continue my graduate studies with the University of Rochester. I am not at this moment taking on any more clinical clients for individual counseling, but if that changes in the future, I’ll post it here.
 - **Research:** I am researching areas of interest to me. These include areas within mental health and technology. I am interested right now in psychodynamic theory and neurophysiological data.

@@ -235,7 +235,8 @@ EXT_LINK = re.compile(r'<a href="(https?://[^"]+)"')
 GNOSIS_ABS = re.compile(r"^https?://(?:www\.)?gnosis\.health(/[^\"#?]*)?([?#].*)?$")
 
 
-def fix_links(h, known_paths):
+def fix_links(h, known_paths, alias_map=None):
+    alias_map = alias_map or {}
     # 1) root-relative links written in markdown ("/doing-business") -> base-relative, trailing slash
     def root_rel(m):
         p = m.group(1)
@@ -256,6 +257,7 @@ def fix_links(h, known_paths):
             if p == "/home":
                 p = "/"
             new = p if p == "/" else p + "/"
+            new = alias_map.get(new, new)
             if new == "/" or new in known_paths:
                 return f'<a href="{U(new)}{g.group(2) or ""}"'
             return m.group(0)
@@ -317,14 +319,14 @@ def finish_images(h, src_dir: Path, out_dir: Path, page_label: str):
     return h
 
 
-def render_md(body, src_dir, out_dir, label, known_paths):
+def render_md(body, src_dir, out_dir, label, known_paths, alias_map=None):
     md = new_md()
     h = md.convert(body)
     h = embed_blocks(h)
     h = shift_headings(h)
     h = mark_references(h)
     h = group_images(h)
-    h = fix_links(h, known_paths)
+    h = fix_links(h, known_paths, alias_map)
     h = finish_images(h, src_dir, out_dir, label)
     return h
 
@@ -399,13 +401,14 @@ def main():
 
     posts = load_posts()
     pages = load_pages()
+    alias_map = {f"/blog/{a}/": f"/blog/{p['slug']}/" for p in posts for a in p["aliases"]}
     known_paths = {"/about/", "/contact/", "/doing-business/", "/blog/"} | {f"/blog/{p['slug']}/" for p in posts}
 
     # ---- posts
     for p in posts:
         out_dir = OUT / "blog" / p["slug"]
         label = f"post:{p['slug']}"
-        p["html"] = render_md(p["body"], p["src_dir"], out_dir, label, known_paths)
+        p["html"] = render_md(p["body"], p["src_dir"], out_dir, label, known_paths, alias_map)
         text = collapse(strip_tags(p["html"]))
         p["words"] = len(text.split())
         p["minutes"] = max(1, round(p["words"] / 230))
@@ -452,7 +455,7 @@ def main():
     def page_ctx(slug):
         pg = pages[slug]
         out_dir = OUT / ("" if slug == "home" else slug)
-        pg["html"] = render_md(pg["body"], CONTENT / "pages", out_dir, f"page:{slug}", known_paths)
+        pg["html"] = render_md(pg["body"], CONTENT / "pages", out_dir, f"page:{slug}", known_paths, alias_map)
         return pg, out_dir
 
     for slug in ("about", "contact", "doing-business"):

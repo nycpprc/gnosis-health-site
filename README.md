@@ -106,3 +106,11 @@ GitHub Pages cannot do server-side redirects; the renamed posts use meta-refresh
 
 Fonts: EB Garamond, Source Serif 4, Inter — SIL Open Font License 1.1 (self-hosted copies from Google Fonts).
 Content © Ryan Bohman.
+
+## Slug redirects
+
+Old Squarespace URLs keep working through redirect stubs generated from each post's `aliases:` front matter
+(meta refresh + canonical to the new URL). Internal links, sitemap, feed and canonicals always use the new slug.
+Current renames: j4wzh0eq8l58tr4cvi7x4d930gfwlg -> review-the-velocipastor, connecting-you -> connecting-your-mind-to-a-computer,
+care-vs-justice-gilligan-vs-kohlberg-amp-piaget -> care-vs-justice-gilligan-kohlberg-piaget,
+human-development-case-study-piaget-...-vygotsky -> human-development-case-study, plus six older random-slug stubs and /home/ -> /.

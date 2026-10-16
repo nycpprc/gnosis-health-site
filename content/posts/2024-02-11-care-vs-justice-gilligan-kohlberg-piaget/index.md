@@ -1,7 +1,9 @@
 ---
 title: 'Care vs Justice: Gilligan vs Kohlberg & Piaget'
 date: '2024-02-11'
-slug: care-vs-justice-gilligan-vs-kohlberg-amp-piaget
+slug: care-vs-justice-gilligan-kohlberg-piaget
+aliases:
+- care-vs-justice-gilligan-vs-kohlberg-amp-piaget
 image: images/image-8.webp
 ---
 

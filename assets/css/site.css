@@ -260,6 +260,6 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .hero__def { margin-bottom: 1.8rem; }
 .hero__caption { position: relative; margin: 0 auto; padding: 1.4rem 0 .5rem; text-align: center; color: var(--ink); }
 .hero__caption blockquote { margin: 0 auto; max-width: none; }
-.hero__caption p { font-family: var(--serif-head); font-style: italic; font-size: clamp(1.3rem, 2.8vw, 2.2rem); line-height: 1.4; margin: 0; text-wrap: pretty; color: var(--ink); }
+.hero__caption p { font-family: var(--serif-head); font-style: italic; font-size: clamp(1.05rem, 2.1vw, 1.65rem); line-height: 1.4; margin: 0; text-wrap: pretty; color: var(--ink); }
 .hero__caption figcaption { font-family: var(--sans); font-size: .72rem; letter-spacing: .02em; color: var(--ink-soft); margin-top: .8rem; opacity: .9; }
 .hero__caption figcaption a { color: var(--ink-soft); text-decoration-color: var(--rule); }

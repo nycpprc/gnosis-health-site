@@ -21,6 +21,8 @@ OUT_PAGES = ROOT / "content" / "pages"
 MAXW = 1600
 
 # old (random) Squarespace slugs -> new slug (redirect stubs are generated from `aliases`)
+# NOTE: four further slugs (velocipastor, care-vs-justice, connecting-your-mind, human-development-case-study)
+# were renamed by hand in content/ after import; this importer predates those renames.
 ALIASES = {
     "emotion-focused-therapy": ["q6cjbp9wii8jwxa9oac4n2pnwo5i9a"],
     "relationship-distress-anxiety-bowen": ["tegkds41h3nn3ah0hgnychdyosghen"],

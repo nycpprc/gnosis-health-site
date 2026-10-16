@@ -2,7 +2,9 @@
 title: 'Human Development Case Study: Piaget, Freud, Bandura, Skinner, Bronfenbrenner
   and Vygotsky'
 date: '2024-04-25'
-slug: human-development-case-study-piaget-freud-bandura-skinner-bronfenbrenner-and-vygotsky
+slug: human-development-case-study
+aliases:
+- human-development-case-study-piaget-freud-bandura-skinner-bronfenbrenner-and-vygotsky
 image: images/suzy-1804140788.webp
 ---
 

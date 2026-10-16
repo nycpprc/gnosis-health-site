@@ -1,7 +1,9 @@
 ---
 title: Connecting Your Mind to a Computer
 date: '2026-03-20'
-slug: connecting-you
+slug: connecting-your-mind-to-a-computer
+aliases:
+- connecting-you
 image: images/screenshot-2026-03-20-at-1-30-21-pm.webp
 ---
 

@@ -3,7 +3,7 @@ title: Doing Business
 slug: doing-business
 ---
 
-I am currently interested in opportunities where I could become an equity partner in your company in exchange for facilitating your growth initiatives. I am a entrepreneurial systems thinker with a track record of execution. At this stage in my career I am spending around 10-20 hours a week offering clinical services, counseling a small set of individual clients. I am also spending around 10-20 hours a week conducting private reading and research on the topics of philosophy, psychology and technology. I would be able to offer time with your organization as a partner and strategic advisor.
+I am currently interested in opportunities where I could become an equity partner in your company in exchange for facilitating your growth initiatives. I am an entrepreneurial systems thinker with a track record of execution. At this stage in my career I am spending around 10-20 hours a week offering clinical services, counseling a small set of individual clients. I am also spending around 10-20 hours a week conducting private reading and research on the topics of philosophy, psychology and technology. I would be able to offer time with your organization as a partner and strategic advisor.
 
 Areas I am interested in include:
 

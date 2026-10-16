@@ -1,7 +1,9 @@
 ---
 title: Review of "The VelociPastor"
 date: '2023-12-07'
-slug: j4wzh0eq8l58tr4cvi7x4d930gfwlg
+slug: review-the-velocipastor
+aliases:
+- j4wzh0eq8l58tr4cvi7x4d930gfwlg
 image: images/snbofgzu4kh7e9tzhktiwgsnze8-3103128450.webp
 ---
 

@@ -99,7 +99,7 @@ Anagnostopoulou, P., Alexandropoulou, V., Lorentzou, G., Lykothanasi, A., Ntaoun
 
 Andrés-Roqueta, C., & Katsos, N. (2020). A distinction between linguistic and social pragmatics helps the precise characterization of pragmatic challenges in children with autism spectrum disorders and developmental language disorder. *Journal of Speech, Language, and Hearing Research, 63*(5), 1494–1508. <https://doi.org/10.1044/2020_JSLHR-19-00263>
 
-Bamicha, V., & Drigas, A. (2022). ToM & ASD: The interconnection of Theory of Mind with the social-emotional, cognitive development of children with Autism Spectrum Disorder. *Technium Social Sciences Journal, 33,* 42–72. <https://doi.org/10.47577/tssj.v33i1.7010>
+Bamicha, V., & Drigas, A. (2022). ToM & ASD: The interconnection of Theory of Mind with the social-emotional, cognitive development of children with Autism Spectrum Disorder. *Technium Social Sciences Journal, 33,* 42–72. <https://doi.org/10.47577/tssj.v33i1.6845>
 
 Baron-Cohen, S., Leslie, A. M., & Frith, U. (1985). Does the autistic child have a “theory of mind”? *Cognition, 21*(1), 37–46. <https://doi.org/10.1016/0010-0277(85)90022-8>
 
