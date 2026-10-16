@@ -110,6 +110,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 
 /* ---------- hero (sunrise) ---------- */
 .hero { overflow: hidden; color: #FFFFFF; }
+.hero__sky { padding-bottom: 0; }
 .hero__sky { background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-2) 36%, var(--sky-3) 62%, var(--sky-4) 82%, var(--sky-5) 94%, var(--cream) 100%); display: flex; flex-direction: column; }
 .hero__text { text-align: center; padding: clamp(3rem, 8vw, 6rem) 0 1rem; position: relative; z-index: 2; }
 .hero__eyebrow { font-family: var(--serif-head); font-style: italic; font-size: 1.35rem; letter-spacing: .12em; color: #CFE5FB; margin: 0 0 .5rem; }
@@ -257,6 +258,8 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .eyebrow [lang="grc"] { text-transform: none; letter-spacing: .06em; font-family: var(--serif-head); font-style: italic; font-size: 1.15rem; font-weight: 500; }
 
 .hero__def { margin-bottom: 1.8rem; }
-.hero__tagline--second { margin-top: .8rem; font-size: clamp(1rem, 2vw, 1.2rem); color: #D3E6FA; }
-.hero__source { font-family: var(--sans); font-size: .8rem; color: #CFE3F8; margin: 1rem 0 0; }
-.hero__source a { color: #FFFFFF; text-decoration-color: rgba(255,255,255,.55); }
+.hero__caption { position: relative; margin: 0 auto; padding: 1.4rem 0 .5rem; text-align: center; color: var(--ink); }
+.hero__caption blockquote { margin: 0 auto; max-width: 46ch; }
+.hero__caption p { font-family: var(--serif-head); font-style: italic; font-size: clamp(1.3rem, 2.6vw, 1.7rem); line-height: 1.4; margin: 0; text-wrap: balance; color: var(--ink); }
+.hero__caption figcaption { font-family: var(--sans); font-size: .85rem; color: var(--ink-soft); margin-top: .9rem; }
+.hero__caption figcaption a { color: var(--link); }

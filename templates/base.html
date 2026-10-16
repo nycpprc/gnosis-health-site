@@ -49,7 +49,6 @@
     <nav class="nav" aria-label="Main">
       <a href="{{ U('/blog/') }}"{% if nav == 'blog' %} aria-current="page"{% endif %}>Blog</a>
       <a href="{{ U('/about/') }}"{% if nav == 'about' %} aria-current="page"{% endif %}>About</a>
-      <a href="{{ U('/doing-business/') }}"{% if nav == 'work' %} aria-current="page"{% endif %}>Work with me</a>
       <a href="{{ U('/contact/') }}"{% if nav == 'contact' %} aria-current="page"{% endif %}>Contact</a>
     </nav>
   </div>
@@ -71,7 +70,6 @@
       <ul class="footer-list">
         <li><a href="{{ U('/blog/') }}">Blog</a></li>
         <li><a href="{{ U('/about/') }}">About</a></li>
-        <li><a href="{{ U('/doing-business/') }}">Work with me</a></li>
         <li><a href="{{ U('/contact/') }}">Contact</a></li>
         <li><a href="{{ U('/feed.xml') }}">RSS feed</a></li>
       </ul>
