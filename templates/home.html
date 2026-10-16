@@ -55,6 +55,7 @@
   <div class="card-grid">
     {% for p in latest %}{{ card(p) }}{% endfor %}
   </div>
+  <p class="latest__more"><a href="{{ U('/blog/') }}">View all posts on the blog <span aria-hidden="true">→</span></a></p>
 </section>
 
 {% endblock %}
