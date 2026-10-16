@@ -13,7 +13,7 @@
   </header>
   <div class="wrap narrow">
     {% if post.image %}
-    <figure class="post-hero">
+    <figure class="post-hero{% if post.image_wh[1] > post.image_wh[0] %} post-hero--portrait{% endif %}">
       <img src="{{ post.image }}" alt="" width="{{ post.image_wh[0] }}" height="{{ post.image_wh[1] }}" decoding="async" fetchpriority="high">
     </figure>
     {% endif %}

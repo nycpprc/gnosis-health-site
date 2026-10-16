@@ -10,6 +10,7 @@ Output goes to site/.
 """
 import datetime as dt
 import email.utils
+import hashlib
 import html
 import json
 import os
@@ -48,6 +49,13 @@ ORIGIN = CFG["site_origin"].rstrip("/")
 def U(path="/"):
     """Site-relative URL (with base path)."""
     return BASE + path
+
+
+def A(path):
+    """Asset URL with a content-hash query so browsers/CDNs refetch changed CSS/JS."""
+    f = ROOT / path.lstrip("/")
+    v = hashlib.md5(f.read_bytes()).hexdigest()[:10] if f.exists() else "0"
+    return f"{BASE}{path}?v={v}"
 
 
 def ABS(path="/"):
@@ -395,7 +403,7 @@ def main():
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
-    env.globals.update(U=U, ABS=ABS, cfg=CFG, noindex=CFG["noindex"], year=dt.date.today().year,
+    env.globals.update(U=U, A=A, ABS=ABS, cfg=CFG, noindex=CFG["noindex"], year=dt.date.today().year,
                        fmt_date=fmt_date)
     env.filters["tojson_safe"] = lambda v: json.dumps(v, ensure_ascii=False).replace("</", "<\\/")
 

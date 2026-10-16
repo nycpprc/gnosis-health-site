@@ -205,10 +205,11 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .post-head h1 { margin: .6rem 0 1rem; font-size: clamp(2.2rem, 5vw, 3.3rem); }
 .tags { list-style: none; display: flex; gap: .5rem; flex-wrap: wrap; padding: 0; margin: 0 0 .5rem; }
 .tags li { font-family: var(--sans); font-size: .78rem; font-weight: 600; padding: .25rem .7rem; border-radius: 999px; background: var(--accent-tint); color: var(--ink); }
-.post-hero { font-size: 1.2rem; max-width: var(--measure); margin: 1.6rem 0 2.4rem; } /* same width as .prose: lead image never wider than the text column */
-.post-hero { text-align: center; }
-/* lead image: natural aspect, never upscaled, capped in height, centred */
-.post-hero img { width: auto; height: auto; max-width: 100%; max-height: 440px; margin-inline: auto; object-fit: contain; border-radius: var(--radius); box-shadow: var(--shadow); background: var(--paper); }
+/* Lead image: lives in the same column as the body text and fills its full width.
+   Landscape images: width 100%, height capped (cover crop). Portrait images: natural proportions, centred. */
+.post-hero { width: 100%; max-width: 100%; margin: 1.6rem 0 2.4rem; padding: 0; }
+.post-hero img { display: block; width: 100%; max-width: 100%; height: auto; max-height: 440px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); background: var(--paper); }
+.post-hero--portrait img { width: auto; margin-inline: auto; object-fit: contain; }
 @media (max-width: 620px) { .post-hero { margin-block: 1.2rem 1.8rem; } .post-hero img { max-height: 320px; border-radius: 12px; } }
 .byline { font-family: var(--sans); font-size: .9rem; color: var(--ink-soft); margin: 3rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--rule); max-width: var(--measure); }
 .post-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 3rem; width: min(100% - 2.5rem, calc(var(--measure) + 2rem)); }
@@ -277,3 +278,5 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .cite__pop--up::before { top: auto; bottom: -.7rem; }
 
 .page-note { font-family: var(--sans); font-size: .85rem; color: var(--ink-soft); margin: .9rem 0 0; opacity: .95; }
+/* safety net: if an old cached page puts the hero outside the column wrapper, still centre it at column width */
+.post-hero.wrap { width: min(100% - 2.5rem, calc(var(--measure) + 2rem)); margin-inline: auto; }
