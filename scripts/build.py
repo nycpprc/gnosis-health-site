@@ -493,7 +493,8 @@ def main():
         title=f"{CFG['site_name']} — {CFG['tagline']}", description=CFG["description"], canonical=ABS("/"),
         og_type="website", og_image=ABS("/assets/og-default.jpg"), nav="home", path="/")
     write("/index.html", home_html)
-    write("/home/index.html", env.get_template("redirect.html").render(target=ABS("/"), target_rel=U("/"), title="Redirecting…", description="", canonical=ABS("/"), og_image=None, og_type="website", nav=None))
+    for old_home in ("/home", "/home-1"):
+        write(f"{old_home}/index.html", env.get_template("redirect.html").render(target=ABS("/"), target_rel=U("/"), title="Redirecting…", description="", canonical=ABS("/"), og_image=None, og_type="website", nav=None))
 
     # blog index
     years = sorted({p["year"] for p in posts}, reverse=True)
@@ -526,7 +527,7 @@ def main():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
 
     # ---- report
-    summary = dict(posts=len(posts), pages=len(pages), images=len(IMG_INFO), redirects=sum(len(p["aliases"]) for p in posts) + 1,
+    summary = dict(posts=len(posts), pages=len(pages), images=len(IMG_INFO), redirects=sum(len(p["aliases"]) for p in posts) + 2,
                    base_path=BASE, origin=ORIGIN, noindex=CFG["noindex"], broken_refs=BROKEN,
                    posts_missing_alt=sum(p["alt_missing"] for p in posts))
     print(json.dumps(summary, indent=1, ensure_ascii=False))
