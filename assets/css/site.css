@@ -205,7 +205,8 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .post-head h1 { margin: .6rem 0 1rem; font-size: clamp(2.2rem, 5vw, 3.3rem); }
 .tags { list-style: none; display: flex; gap: .5rem; flex-wrap: wrap; padding: 0; margin: 0 0 .5rem; }
 .tags li { font-family: var(--sans); font-size: .78rem; font-weight: 600; padding: .25rem .7rem; border-radius: 999px; background: var(--accent-tint); color: var(--ink); }
-.post-hero { width: min(100% - 2.5rem, 860px); margin: 1.6rem auto 2.4rem; }
+.post-hero { font-size: 1.2rem; max-width: var(--measure); margin: 1.6rem 0 2.4rem; } /* same width as .prose: lead image never wider than the text column */
+.post-hero { text-align: center; }
 /* lead image: natural aspect, never upscaled, capped in height, centred */
 .post-hero img { width: auto; height: auto; max-width: 100%; max-height: 440px; margin-inline: auto; object-fit: contain; border-radius: var(--radius); box-shadow: var(--shadow); background: var(--paper); }
 @media (max-width: 620px) { .post-hero { margin-block: 1.2rem 1.8rem; } .post-hero img { max-height: 320px; border-radius: 12px; } }

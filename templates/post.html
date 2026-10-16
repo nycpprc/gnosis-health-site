@@ -11,12 +11,12 @@
     <h1>{{ post.title }}</h1>
     {% if post.tags %}<ul class="tags" aria-label="Tags">{% for t in post.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
   </header>
-  {% if post.image %}
-  <figure class="wrap post-hero">
-    <img src="{{ post.image }}" alt="" width="{{ post.image_wh[0] }}" height="{{ post.image_wh[1] }}" decoding="async" fetchpriority="high">
-  </figure>
-  {% endif %}
   <div class="wrap narrow">
+    {% if post.image %}
+    <figure class="post-hero">
+      <img src="{{ post.image }}" alt="" width="{{ post.image_wh[0] }}" height="{{ post.image_wh[1] }}" decoding="async" fetchpriority="high">
+    </figure>
+    {% endif %}
     <div class="prose">{{ post.html|safe }}</div>
     <p class="byline">Written by {{ cfg.author }}.</p>
   </div>
