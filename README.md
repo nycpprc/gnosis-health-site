@@ -39,7 +39,7 @@ Configuration comes from `config.json`; environment variables override it:
 | Variable      | Meaning                                              | Temporary address                | After cutover              |
 |---------------|------------------------------------------------------|----------------------------------|----------------------------|
 | `BASE_PATH`   | URL prefix the site is served under                  | `/gnosis-health-site`            | *(empty)*                  |
-| `SITE_ORIGIN` | scheme + host used for canonical/og/feed/sitemap     | `https://nycpprc.github.io`      | `https://www.gnosis.health`|
+| `SITE_ORIGIN` | scheme + host used for canonical/og/sitemap     | `https://nycpprc.github.io`      | `https://www.gnosis.health`|
 | `NOINDEX`     | `true` adds `<meta name="robots" content="noindex">` and a `Disallow: /` robots.txt | `true` | `false` |
 
 Quick local preview at the right path:
@@ -74,7 +74,7 @@ python -m http.server 8000 -d /tmp/preview   # http://localhost:8000/gnosis-heal
 4. `python scripts/build.py && python scripts/check_links.py`, then commit and push to `main`.
 5. Set `draft: true` in the front matter to keep a post out of the build.
 
-Reading time, previous/next links, RSS (`/feed.xml`, latest 25 posts), `sitemap.xml` and the blog index are generated automatically.
+Reading time, previous/next links, `sitemap.xml` and the blog index are generated automatically.
 Add **`aliases: [old-slug]`** to a post to generate a redirect stub from an old URL.
 
 ## Deploy
@@ -94,7 +94,7 @@ Pages is configured with *Source: GitHub Actions* (Settings → Pages). Re-run m
      (optional `AAAA`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`)
    * Remove the old Squarespace `A`/`CNAME` records for those names. Email (MX/TXT) records for `ryan@gnosis.health` must stay as they are.
 5. In Settings → Pages: enter the custom domain, wait for the DNS check, tick **Enforce HTTPS**.
-6. Verify: `/`, `/blog/`, a few posts, `/about/`, `/contact/`, `/doing-business/`, `/feed.xml`, `/sitemap.xml`, the six old random-slug redirects, `/home/`.
+6. Verify: `/`, `/blog/`, a few posts, `/about/`, `/contact/`, `/doing-business/`, `/sitemap.xml`, the six old random-slug redirects, `/home/`.
 7. Submit `https://www.gnosis.health/sitemap.xml` in Google Search Console (and re-verify the property).
    Add Google Analytics only now, if wanted (a snippet in `templates/base.html`).
 8. Keep the Squarespace subscription until everything above is verified (and the domain is no longer pointed at it), then cancel.
@@ -110,7 +110,7 @@ Content © Ryan Bohman.
 ## Slug redirects
 
 Old Squarespace URLs keep working through redirect stubs generated from each post's `aliases:` front matter
-(meta refresh + canonical to the new URL). Internal links, sitemap, feed and canonicals always use the new slug.
+(meta refresh + canonical to the new URL). Internal links, sitemap and canonicals always use the new slug.
 Current renames: j4wzh0eq8l58tr4cvi7x4d930gfwlg -> review-the-velocipastor, connecting-you -> connecting-your-mind-to-a-computer,
 care-vs-justice-gilligan-vs-kohlberg-amp-piaget -> care-vs-justice-gilligan-kohlberg-piaget,
 human-development-case-study-piaget-...-vygotsky -> human-development-case-study, plus six older random-slug stubs and /home/ -> /.

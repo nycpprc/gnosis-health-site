@@ -496,35 +496,6 @@ def main():
     write("/404.html", env.get_template("404.html").render(title=f"Page not found — {CFG['site_name']}", description="Page not found.",
                                                            canonical=ABS("/"), og_type="website", og_image=ABS("/assets/og-default.jpg"), nav=None, path="/404.html"))
 
-    # ---- feed
-    def absolutize(h, base_url):
-        def sub(m):
-            attr, val = m.group(1), m.group(2)
-            if re.match(r"^(https?:|mailto:|#|data:)", val):
-                return m.group(0)
-            if val.startswith("/"):
-                return f'{attr}="{ORIGIN}{val}"'
-            return f'{attr}="{base_url}{val}"'
-        return re.sub(r'\b(href|src)="([^"]*)"', sub, h)
-
-    items = []
-    for p in posts[: CFG["feed_items"]]:
-        content = absolutize(p["html"], ABS(p["url"]))
-        pub = email.utils.format_datetime(dt.datetime.combine(p["date"], dt.time(12, 0), tzinfo=dt.timezone.utc))
-        enc = f'<img src="{ABS(p["url"] + p["og"])}" alt="" />' if p["og"] else ""
-        items.append(f"""<item><title>{xesc(p['title'])}</title><link>{ABS(p['url'])}</link><guid isPermaLink="true">{ABS(p['url'])}</guid>
-<pubDate>{pub}</pubDate><dc:creator>{xesc(CFG['author'])}</dc:creator><description>{xesc(p['excerpt'])}</description>
-<content:encoded><![CDATA[{content.replace(']]>', ']]&gt;')}]]></content:encoded></item>""")
-    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>{xesc(CFG['site_name'])}</title><link>{ABS('/')}</link><description>{xesc(CFG['description'])}</description>
-<language>{CFG['language']}</language><atom:link href="{ABS('/feed.xml')}" rel="self" type="application/rss+xml"/>
-<lastBuildDate>{email.utils.format_datetime(dt.datetime.now(dt.timezone.utc))}</lastBuildDate>
-{chr(10).join(items)}
-</channel></rss>
-"""
-    write("/feed.xml", feed)
-
     # ---- sitemap / robots
     urls = [("/", posts[0]["date"]), ("/blog/", posts[0]["date"]), ("/about/", None), ("/doing-business/", None), ("/contact/", None)]
     urls += [(p["url"], p["date"]) for p in posts]

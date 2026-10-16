@@ -103,9 +103,9 @@ for url, (f, pr) in pages.items():
             if frag not in ids_cache[target]:
                 frag_missing.append((url, ref))
 
-# sitemap + feed + redirect stubs
+# sitemap + redirect stubs
 extra = []
-for name in ("sitemap.xml", "feed.xml"):
+for name in ("sitemap.xml",):
     txt = (SITE / name).read_text(encoding="utf-8")
     for loc in re.findall(r"<(?:loc|link)>([^<]+)</(?:loc|link)>", txt):
         r = resolve("/", loc)
@@ -128,7 +128,7 @@ print(f"Broken internal references: {len(broken)}")
 for b in broken[:50]: print("  BROKEN", b)
 print(f"Missing #fragments: {len(frag_missing)}")
 for b in frag_missing[:20]: print("  FRAG", b)
-print(f"sitemap/feed URLs not found: {len(extra)}")
+print(f"sitemap URLs not found: {len(extra)}")
 for b in extra[:20]: print("  ", b)
 print(f"<img> without alt attribute: {sum(p.imgs_no_alt for _, p in pages.values())}")
 print(f"pages missing og:title/description: {len(no_og)}")
