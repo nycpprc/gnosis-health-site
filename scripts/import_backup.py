@@ -189,7 +189,7 @@ def import_pages():
         outdir = OUT_PAGES
         front = {"title": fm["title"], "slug": slug}
         # copy page images (not favicons) with safe names
-        for m in re.finditer(r"!\[([^\]]*)\]\((images/[^)]+)\)", body):
+        for m in ([] if slug == "home" else re.finditer(r"!\[([^\]]*)\]\((images/[^)]+)\)", body)):
             f = d / m.group(2)
             name = safe_name(f.name) + ".webp"
             optimize(f, OUT_PAGES / "images" / name)
@@ -198,9 +198,6 @@ def import_pages():
             body = re.sub(r"!\[[^\]]*\]\(images/[^)]+\)\n*", "", body)          # image placed by template
             body = re.sub(r"^## Welcome\n+", "", body)
             front["heading"] = "Welcome"
-            optimize(d / "images" / "santorini.png", OUT_PAGES / "images" / "santorini.webp")
-            front["image"] = "images/santorini.webp"
-            front["image_alt"] = "A brilliant white sun above the whitewashed, blue-domed buildings and sea of Santorini"
         if slug == "about":
             body = re.sub(r"^## About\n+", "", body)
             body = body.replace("![](images/me.webp)", "![Ryan Bohman standing and smiling in a lecture room](images/me.webp)")

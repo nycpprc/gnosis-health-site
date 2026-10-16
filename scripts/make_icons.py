@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw
 
 OUT = Path(__file__).resolve().parent.parent / "assets" / "icons"
 GOLD = (215, 154, 30, 255)
-INK = (27, 33, 80, 255)
+INK = (15, 34, 71, 255)
 OUT.mkdir(parents=True, exist_ok=True)
 
 SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">

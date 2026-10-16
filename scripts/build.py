@@ -471,11 +471,9 @@ def main():
 
     # home
     hp, hdir = page_ctx("home")
-    himg = hp["fm"].get("image")
-    himg_rel = process_image(CONTENT / "pages" / himg, OUT, himg) if himg else None
     latest = posts[:6]
     home_html = env.get_template("home.html").render(
-        pg=hp, hero_img=himg_rel, hero_wh=IMG_INFO.get(OUT / himg_rel) if himg_rel else None, latest=latest, total=len(posts),
+        pg=hp, latest=latest, total=len(posts),
         title=f"{CFG['site_name']} — {CFG['tagline']}", description=CFG["description"], canonical=ABS("/"),
         og_type="website", og_image=ABS("/assets/og-default.jpg"), nav="home", path="/")
     write("/index.html", home_html)
