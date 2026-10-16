@@ -9,12 +9,12 @@
 
 <section class="wrap filters" id="filters" data-search-url="{{ U('/blog/search.json') }}" hidden>
   <form role="search" onsubmit="return false">
-    <label for="q" class="visually-hidden">Search posts</label>
-    <input id="q" type="search" placeholder="Search titles and text…" autocomplete="off">
+    <label for="q" class="visually-hidden">Search titles and text</label>
+    <input id="q" type="search" placeholder="Search…" autocomplete="off">
   </form>
   <div class="chips" role="group" aria-label="Filter by year">
     <button type="button" class="chip" data-year="all" aria-pressed="true">All</button>
-    {% for y in years %}<button type="button" class="chip" data-year="{{ y }}" aria-pressed="false">{{ y }} <span>{{ year_counts[y] }}</span></button>{% endfor %}
+    {% for y in years %}<button type="button" class="chip" data-year="{{ y }}" aria-pressed="false">{{ y }}</button>{% endfor %}
   </div>
   {% if all_tags %}
   <div class="chips" role="group" aria-label="Filter by tag">
@@ -25,15 +25,10 @@
 </section>
 
 <div class="wrap post-list" id="post-list">
-{% for y in years %}
-  <section class="year-group" data-year-group="{{ y }}" aria-labelledby="y{{ y }}">
-    <h2 class="year-title" id="y{{ y }}">{{ y }}</h2>
-    <div class="card-grid">
-    {% for p in posts if p.year == y %}{{ card(p, true) }}
-    {% endfor %}
-    </div>
-  </section>
-{% endfor %}
+  <div class="card-grid">
+  {% for p in posts %}{{ card(p, true) }}
+  {% endfor %}
+  </div>
 </div>
 <p class="wrap empty" id="empty" hidden>No posts match that search. Try fewer words, or clear the filters.</p>
 {% endblock %}

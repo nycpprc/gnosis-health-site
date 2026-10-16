@@ -28,7 +28,7 @@
                terms.every(function (t) { return (hay || r.getAttribute('data-text')).indexOf(t) > -1; });
       r.hidden = !ok; if (ok) shown++;
     });
-    groups.forEach(function (g) { g.hidden = !g.querySelector('.card:not([hidden])'); });
+
     empty.hidden = shown > 0;
     status.textContent = (terms.length || year !== 'all' || tag) ? shown + (shown === 1 ? ' post' : ' posts') + ' shown' : '';
   }
