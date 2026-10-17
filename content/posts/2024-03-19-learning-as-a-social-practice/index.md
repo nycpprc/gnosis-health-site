@@ -5,7 +5,7 @@ slug: learning-as-a-social-practice
 image: images/image-13.webp
 ---
 
-I created this critical commentary for my graduate theories of human development class at the University of Rochester. The professor asked us to read [Chapters 2 and 3 from](https://www.amazon.com/Situated-Learning-Participation-Computational-Perspectives/dp/0521423740/)["Situated Learning" by Lave and Wegner (1991)](https://www.amazon.com/Situated-Learning-Participation-Computational-Perspectives/dp/0521423740/), which discusses learning as a social practice. My critical commentary is below.
+I created this critical commentary for my graduate theories of human development class at the University of Rochester. The professor asked us to read [Chapters 2 and 3 from](https://www.amazon.com/Situated-Learning-Participation-Computational-Perspectives/dp/0521423740/) ["Situated Learning" by Lave and Wegner (1991)](https://www.amazon.com/Situated-Learning-Participation-Computational-Perspectives/dp/0521423740/), which discusses learning as a social practice. My critical commentary is below.
 
 **Learning as a Social Practice**
 

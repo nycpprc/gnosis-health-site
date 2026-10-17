@@ -91,7 +91,7 @@ To my mind, the researchers may have simply recruited a small sample of affected
 
 Mertens, D. M. (2019). Experimental and quasi-experimental research. In *Research and evaluation in education and psychology: Integrating diversity with quantitative, qualitative, and mixed methods* (5th ed., pp. 155–156). SAGE Publications, Inc.
 
-Rucklidge, J. J., & Tannock, R. (2001). Psychiatric, psychosocial, and cognitive functioning of female adolescents with ADHD. *Journal of the American Academy of Child and Adolescent Psychiatry, 40*(5), 530–540.<https://doi.org/10.1097/00004583-200105000-00012>
+Rucklidge, J. J., & Tannock, R. (2001). Psychiatric, psychosocial, and cognitive functioning of female adolescents with ADHD. *Journal of the American Academy of Child and Adolescent Psychiatry, 40*(5), 530–540. <https://doi.org/10.1097/00004583-200105000-00012>
 
 **Appendix A - Details on Results**
 

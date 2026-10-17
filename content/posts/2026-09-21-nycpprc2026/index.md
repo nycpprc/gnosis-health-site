@@ -73,245 +73,164 @@ Each session has **its own RSVP link** below, **please RSVP to each talk individ
 - **Food:** Market 57 food is allowed in classrooms. **No outside food or alcohol.**
 - **Temperature Alert:** AC may be chilly — bring a jacket!
 
-[View fullsize
-![](images/img-5203.webp)](images/img-5203.webp)
+[![Conference photo 1](images/img-5203.webp)](images/img-5203.webp)
 
-[View fullsize
-![](images/img-5204.webp)](images/img-5204.webp)
+[![Conference photo 2](images/img-5204.webp)](images/img-5204.webp)
 
-[View fullsize
-![](images/img-5205.webp)](images/img-5205.webp)
+[![Conference photo 3](images/img-5205.webp)](images/img-5205.webp)
 
-[View fullsize
-![](images/img-5206.webp)](images/img-5206.webp)
+[![Conference photo 4](images/img-5206.webp)](images/img-5206.webp)
 
-[View fullsize
-![](images/img-5207.webp)](images/img-5207.webp)
+[![Conference photo 5](images/img-5207.webp)](images/img-5207.webp)
 
-[View fullsize
-![](images/img-5208.webp)](images/img-5208.webp)
+[![Conference photo 6](images/img-5208.webp)](images/img-5208.webp)
 
-[View fullsize
-![](images/img-5209.webp)](images/img-5209.webp)
+[![Conference photo 7](images/img-5209.webp)](images/img-5209.webp)
 
-[View fullsize
-![](images/pxl-20260919-140607838-mp.webp)](images/pxl-20260919-140607838-mp.webp)
+[![Conference photo 8](images/pxl-20260919-140607838-mp.webp)](images/pxl-20260919-140607838-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-140623876.webp)](images/pxl-20260919-140623876.webp)
+[![Conference photo 9](images/pxl-20260919-140623876.webp)](images/pxl-20260919-140623876.webp)
 
-[View fullsize
-![](images/pxl-20260919-140646666-mp.webp)](images/pxl-20260919-140646666-mp.webp)
+[![Conference photo 10](images/pxl-20260919-140646666-mp.webp)](images/pxl-20260919-140646666-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-140650544-mp.webp)](images/pxl-20260919-140650544-mp.webp)
+[![Conference photo 11](images/pxl-20260919-140650544-mp.webp)](images/pxl-20260919-140650544-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-140717657-mp.webp)](images/pxl-20260919-140717657-mp.webp)
+[![Conference photo 12](images/pxl-20260919-140717657-mp.webp)](images/pxl-20260919-140717657-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-140819679-mp.webp)](images/pxl-20260919-140819679-mp.webp)
+[![Conference photo 13](images/pxl-20260919-140819679-mp.webp)](images/pxl-20260919-140819679-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-140829059-mp.webp)](images/pxl-20260919-140829059-mp.webp)
+[![Conference photo 14](images/pxl-20260919-140829059-mp.webp)](images/pxl-20260919-140829059-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-140934423-mp.webp)](images/pxl-20260919-140934423-mp.webp)
+[![Conference photo 15](images/pxl-20260919-140934423-mp.webp)](images/pxl-20260919-140934423-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-141329499-mp.webp)](images/pxl-20260919-141329499-mp.webp)
+[![Conference photo 16](images/pxl-20260919-141329499-mp.webp)](images/pxl-20260919-141329499-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-145931488.webp)](images/pxl-20260919-145931488.webp)
+[![Conference photo 17](images/pxl-20260919-145931488.webp)](images/pxl-20260919-145931488.webp)
 
-[View fullsize
-![](images/20260919-113129-jpg.webp)](images/20260919-113129-jpg.webp)
+[![Conference photo 18](images/20260919-113129-jpg.webp)](images/20260919-113129-jpg.webp)
 
-[View fullsize
-![](images/20260919-113117-jpg.webp)](images/20260919-113117-jpg.webp)
+[![Conference photo 19](images/20260919-113117-jpg.webp)](images/20260919-113117-jpg.webp)
 
-[View fullsize
-![](images/20260919-113131-jpg.webp)](images/20260919-113131-jpg.webp)
+[![Conference photo 20](images/20260919-113131-jpg.webp)](images/20260919-113131-jpg.webp)
 
-[View fullsize
-![](images/pxl-20260919-150015171.webp)](images/pxl-20260919-150015171.webp)
+[![Conference photo 21](images/pxl-20260919-150015171.webp)](images/pxl-20260919-150015171.webp)
 
-[View fullsize
-![](images/pxl-20260919-150124128.webp)](images/pxl-20260919-150124128.webp)
+[![Conference photo 22](images/pxl-20260919-150124128.webp)](images/pxl-20260919-150124128.webp)
 
-[View fullsize
-![](images/pxl-20260919-150129587.webp)](images/pxl-20260919-150129587.webp)
+[![Conference photo 23](images/pxl-20260919-150129587.webp)](images/pxl-20260919-150129587.webp)
 
-[View fullsize
-![](images/pxl-20260919-150439730.webp)](images/pxl-20260919-150439730.webp)
+[![Conference photo 24](images/pxl-20260919-150439730.webp)](images/pxl-20260919-150439730.webp)
 
-[View fullsize
-![](images/pxl-20260919-150443316.webp)](images/pxl-20260919-150443316.webp)
+[![Conference photo 25](images/pxl-20260919-150443316.webp)](images/pxl-20260919-150443316.webp)
 
-[View fullsize
-![](images/pxl-20260919-150451478-mp.webp)](images/pxl-20260919-150451478-mp.webp)
+[![Conference photo 26](images/pxl-20260919-150451478-mp.webp)](images/pxl-20260919-150451478-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-150452921.webp)](images/pxl-20260919-150452921.webp)
+[![Conference photo 27](images/pxl-20260919-150452921.webp)](images/pxl-20260919-150452921.webp)
 
-[View fullsize
-![](images/pxl-20260919-151033680.webp)](images/pxl-20260919-151033680.webp)
+[![Conference photo 28](images/pxl-20260919-151033680.webp)](images/pxl-20260919-151033680.webp)
 
-[View fullsize
-![](images/pxl-20260919-154106827.webp)](images/pxl-20260919-154106827.webp)
+[![Conference photo 29](images/pxl-20260919-154106827.webp)](images/pxl-20260919-154106827.webp)
 
-[View fullsize
-![](images/pxl-20260919-160300717-mp.webp)](images/pxl-20260919-160300717-mp.webp)
+[![Conference photo 30](images/pxl-20260919-160300717-mp.webp)](images/pxl-20260919-160300717-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-160347285.webp)](images/pxl-20260919-160347285.webp)
+[![Conference photo 31](images/pxl-20260919-160347285.webp)](images/pxl-20260919-160347285.webp)
 
-[View fullsize
-![](images/pxl-20260919-160426130-mp.webp)](images/pxl-20260919-160426130-mp.webp)
+[![Conference photo 32](images/pxl-20260919-160426130-mp.webp)](images/pxl-20260919-160426130-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-160433488-mp.webp)](images/pxl-20260919-160433488-mp.webp)
+[![Conference photo 33](images/pxl-20260919-160433488-mp.webp)](images/pxl-20260919-160433488-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-160437334-mp-1.webp)](images/pxl-20260919-160437334-mp-1.webp)
+[![Conference photo 34](images/pxl-20260919-160437334-mp-1.webp)](images/pxl-20260919-160437334-mp-1.webp)
 
-[View fullsize
-![](images/pxl-20260919-160437334-mp-1.webp)](images/pxl-20260919-160437334-mp-1.webp)
+[![Conference photo 35](images/pxl-20260919-160437334-mp-1.webp)](images/pxl-20260919-160437334-mp-1.webp)
 
-[View fullsize
-![](images/pxl-20260919-160534832-mp.webp)](images/pxl-20260919-160534832-mp.webp)
+[![Conference photo 36](images/pxl-20260919-160534832-mp.webp)](images/pxl-20260919-160534832-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-160540929.webp)](images/pxl-20260919-160540929.webp)
+[![Conference photo 37](images/pxl-20260919-160540929.webp)](images/pxl-20260919-160540929.webp)
 
-[View fullsize
-![](images/pxl-20260919-160545894.webp)](images/pxl-20260919-160545894.webp)
+[![Conference photo 38](images/pxl-20260919-160545894.webp)](images/pxl-20260919-160545894.webp)
 
-[View fullsize
-![](images/pxl-20260919-160644517.webp)](images/pxl-20260919-160644517.webp)
+[![Conference photo 39](images/pxl-20260919-160644517.webp)](images/pxl-20260919-160644517.webp)
 
-[View fullsize
-![](images/pxl-20260919-160844561-mp.webp)](images/pxl-20260919-160844561-mp.webp)
+[![Conference photo 40](images/pxl-20260919-160844561-mp.webp)](images/pxl-20260919-160844561-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-160847284.webp)](images/pxl-20260919-160847284.webp)
+[![Conference photo 41](images/pxl-20260919-160847284.webp)](images/pxl-20260919-160847284.webp)
 
-[View fullsize
-![](images/pxl-20260919-160851578-mp.webp)](images/pxl-20260919-160851578-mp.webp)
+[![Conference photo 42](images/pxl-20260919-160851578-mp.webp)](images/pxl-20260919-160851578-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-161646286.webp)](images/pxl-20260919-161646286.webp)
+[![Conference photo 43](images/pxl-20260919-161646286.webp)](images/pxl-20260919-161646286.webp)
 
-[View fullsize
-![](images/pxl-20260919-161651323.webp)](images/pxl-20260919-161651323.webp)
+[![Conference photo 44](images/pxl-20260919-161651323.webp)](images/pxl-20260919-161651323.webp)
 
-[View fullsize
-![](images/pxl-20260919-161943172-mp.webp)](images/pxl-20260919-161943172-mp.webp)
+[![Conference photo 45](images/pxl-20260919-161943172-mp.webp)](images/pxl-20260919-161943172-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-162924994.webp)](images/pxl-20260919-162924994.webp)
+[![Conference photo 46](images/pxl-20260919-162924994.webp)](images/pxl-20260919-162924994.webp)
 
-[View fullsize
-![](images/pxl-20260919-162928862-mp.webp)](images/pxl-20260919-162928862-mp.webp)
+[![Conference photo 47](images/pxl-20260919-162928862-mp.webp)](images/pxl-20260919-162928862-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-163250380.webp)](images/pxl-20260919-163250380.webp)
+[![Conference photo 48](images/pxl-20260919-163250380.webp)](images/pxl-20260919-163250380.webp)
 
-[View fullsize
-![](images/pxl-20260919-163256388-mp.webp)](images/pxl-20260919-163256388-mp.webp)
+[![Conference photo 49](images/pxl-20260919-163256388-mp.webp)](images/pxl-20260919-163256388-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-170120399.webp)](images/pxl-20260919-170120399.webp)
+[![Conference photo 50](images/pxl-20260919-170120399.webp)](images/pxl-20260919-170120399.webp)
 
-[View fullsize
-![](images/pxl-20260919-170154573-mp.webp)](images/pxl-20260919-170154573-mp.webp)
+[![Conference photo 51](images/pxl-20260919-170154573-mp.webp)](images/pxl-20260919-170154573-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-170359467.webp)](images/pxl-20260919-170359467.webp)
+[![Conference photo 52](images/pxl-20260919-170359467.webp)](images/pxl-20260919-170359467.webp)
 
-[View fullsize
-![](images/pxl-20260919-170404992.webp)](images/pxl-20260919-170404992.webp)
+[![Conference photo 53](images/pxl-20260919-170404992.webp)](images/pxl-20260919-170404992.webp)
 
-[View fullsize
-![](images/pxl-20260919-170655318.webp)](images/pxl-20260919-170655318.webp)
+[![Conference photo 54](images/pxl-20260919-170655318.webp)](images/pxl-20260919-170655318.webp)
 
-[View fullsize
-![](images/pxl-20260919-170759057.webp)](images/pxl-20260919-170759057.webp)
+[![Conference photo 55](images/pxl-20260919-170759057.webp)](images/pxl-20260919-170759057.webp)
 
-[View fullsize
-![](images/pxl-20260919-171208610.webp)](images/pxl-20260919-171208610.webp)
+[![Conference photo 56](images/pxl-20260919-171208610.webp)](images/pxl-20260919-171208610.webp)
 
-[View fullsize
-![](images/pxl-20260919-171215382.webp)](images/pxl-20260919-171215382.webp)
+[![Conference photo 57](images/pxl-20260919-171215382.webp)](images/pxl-20260919-171215382.webp)
 
-[View fullsize
-![](images/pxl-20260919-172833536-mp.webp)](images/pxl-20260919-172833536-mp.webp)
+[![Conference photo 58](images/pxl-20260919-172833536-mp.webp)](images/pxl-20260919-172833536-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-175149733.webp)](images/pxl-20260919-175149733.webp)
+[![Conference photo 59](images/pxl-20260919-175149733.webp)](images/pxl-20260919-175149733.webp)
 
-[View fullsize
-![](images/pxl-20260919-180054571-mp.webp)](images/pxl-20260919-180054571-mp.webp)
+[![Conference photo 60](images/pxl-20260919-180054571-mp.webp)](images/pxl-20260919-180054571-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-180101487-mp.webp)](images/pxl-20260919-180101487-mp.webp)
+[![Conference photo 61](images/pxl-20260919-180101487-mp.webp)](images/pxl-20260919-180101487-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-180115160-mp.webp)](images/pxl-20260919-180115160-mp.webp)
+[![Conference photo 62](images/pxl-20260919-180115160-mp.webp)](images/pxl-20260919-180115160-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-180135396-mp.webp)](images/pxl-20260919-180135396-mp.webp)
+[![Conference photo 63](images/pxl-20260919-180135396-mp.webp)](images/pxl-20260919-180135396-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-180142309-mp.webp)](images/pxl-20260919-180142309-mp.webp)
+[![Conference photo 64](images/pxl-20260919-180142309-mp.webp)](images/pxl-20260919-180142309-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-181305510.webp)](images/pxl-20260919-181305510.webp)
+[![Conference photo 65](images/pxl-20260919-181305510.webp)](images/pxl-20260919-181305510.webp)
 
-[View fullsize
-![](images/pxl-20260919-181311494.webp)](images/pxl-20260919-181311494.webp)
+[![Conference photo 66](images/pxl-20260919-181311494.webp)](images/pxl-20260919-181311494.webp)
 
-[View fullsize
-![](images/pxl-20260919-190250518-mp.webp)](images/pxl-20260919-190250518-mp.webp)
+[![Conference photo 67](images/pxl-20260919-190250518-mp.webp)](images/pxl-20260919-190250518-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-190255747.webp)](images/pxl-20260919-190255747.webp)
+[![Conference photo 68](images/pxl-20260919-190255747.webp)](images/pxl-20260919-190255747.webp)
 
-[View fullsize
-![](images/pxl-20260919-190302422.webp)](images/pxl-20260919-190302422.webp)
+[![Conference photo 69](images/pxl-20260919-190302422.webp)](images/pxl-20260919-190302422.webp)
 
-[View fullsize
-![](images/pxl-20260919-190346476.webp)](images/pxl-20260919-190346476.webp)
+[![Conference photo 70](images/pxl-20260919-190346476.webp)](images/pxl-20260919-190346476.webp)
 
-[View fullsize
-![](images/pxl-20260919-190906290-mp.webp)](images/pxl-20260919-190906290-mp.webp)
+[![Conference photo 71](images/pxl-20260919-190906290-mp.webp)](images/pxl-20260919-190906290-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-191722993-mp.webp)](images/pxl-20260919-191722993-mp.webp)
+[![Conference photo 72](images/pxl-20260919-191722993-mp.webp)](images/pxl-20260919-191722993-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-200112630.webp)](images/pxl-20260919-200112630.webp)
+[![Conference photo 73](images/pxl-20260919-200112630.webp)](images/pxl-20260919-200112630.webp)
 
-[View fullsize
-![](images/pxl-20260919-200152110-mp.webp)](images/pxl-20260919-200152110-mp.webp)
+[![Conference photo 74](images/pxl-20260919-200152110-mp.webp)](images/pxl-20260919-200152110-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-200155664-mp.webp)](images/pxl-20260919-200155664-mp.webp)
+[![Conference photo 75](images/pxl-20260919-200155664-mp.webp)](images/pxl-20260919-200155664-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-200200010-mp.webp)](images/pxl-20260919-200200010-mp.webp)
+[![Conference photo 76](images/pxl-20260919-200200010-mp.webp)](images/pxl-20260919-200200010-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-200343434-mp.webp)](images/pxl-20260919-200343434-mp.webp)
+[![Conference photo 77](images/pxl-20260919-200343434-mp.webp)](images/pxl-20260919-200343434-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-200344660.webp)](images/pxl-20260919-200344660.webp)
+[![Conference photo 78](images/pxl-20260919-200344660.webp)](images/pxl-20260919-200344660.webp)
 
-[View fullsize
-![](images/pxl-20260919-220250595-mp.webp)](images/pxl-20260919-220250595-mp.webp)
+[![Conference photo 79](images/pxl-20260919-220250595-mp.webp)](images/pxl-20260919-220250595-mp.webp)
 
-[View fullsize
-![](images/pxl-20260919-220254370.webp)](images/pxl-20260919-220254370.webp)
+[![Conference photo 80](images/pxl-20260919-220254370.webp)](images/pxl-20260919-220254370.webp)
 
-[View fullsize
-![](images/pxl-20260919-220304148.webp)](images/pxl-20260919-220304148.webp)
+[![Conference photo 81](images/pxl-20260919-220304148.webp)](images/pxl-20260919-220304148.webp)

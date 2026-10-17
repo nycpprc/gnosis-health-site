@@ -162,10 +162,15 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .prose .figure a { display: block; }
 @media (max-width: 620px) { .prose .figure img { max-height: 380px; } }
 @media (prefers-color-scheme: dark) { .post-hero img, .prose .figure img, .prose .gallery img { box-shadow: 0 0 0 1px var(--rule), var(--shadow); } }
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .8rem; margin: 2em 0; }
-.gallery figure { margin: 0; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 10px; }
-.gallery figure img, .gallery figure a { width: 100%; height: 100%; display: block; }
-.gallery figure img { object-fit: cover; }
+/* photo galleries: responsive justified grid (about 3 per row on desktop, 2 on tablet/phone), every photo at
+   its natural aspect ratio (--ar set per figure by build.py), lazy-loaded, never cropped */
+.gallery { --row: 150px; display: flex; flex-wrap: wrap; gap: .8rem; margin: 2em 0; }
+.gallery figure { margin: 0; flex: var(--ar, 1.333) 1 calc(var(--ar, 1.333) * var(--row)); min-width: 0; }
+.gallery::after { content: ""; flex: 12 1 0; }
+.gallery figure a { display: block; }
+.gallery figure img { display: block; width: 100%; height: auto; }
+@media (max-width: 860px) { .gallery { --row: 190px; } }
+@media (max-width: 520px) { .gallery { --row: 110px; gap: .5rem; } }
 .references { margin-top: .5em; font-size: 1rem; line-height: 1.6; color: var(--ink-soft); }
 .references .ref { padding-left: 2em; text-indent: -2em; margin-block: 0 .9em; }
 .ref-title, .prose p:has(> strong:only-child) { }

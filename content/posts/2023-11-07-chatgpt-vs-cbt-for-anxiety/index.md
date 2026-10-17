@@ -145,7 +145,7 @@ Following each of the ANOVAs, Tukey's HSD and effect size will be calculated alo
 
 **Restating of Research Aims and Hypotheses**
 
-The primary research aim of this study is to investigate the effectiveness of ChatGPT in the treatment of anxiety. The primary hypothesis, known as the treatment equivalence hypothesis, predicts there will be no significant difference between human CBT therapy and AI ChatGPT therapy. The anxiety reduction hypothesis predicts that there will be significant reduction in anxiety in both human CBT therapy and AI ChatGPT therapy.Thewellbeing equivalence hypothesis predicts there will be significant difference in wellbeing after treatment for both the CBT therapy and AI ChatGPT therapy groups. Lastly, the alliance equivalence hypothesis predicts there will be no significant difference in therapeutic alliance between the human CBT therapy and AI ChatGPT therapy.
+The primary research aim of this study is to investigate the effectiveness of ChatGPT in the treatment of anxiety. The primary hypothesis, known as the treatment equivalence hypothesis, predicts there will be no significant difference between human CBT therapy and AI ChatGPT therapy. The anxiety reduction hypothesis predicts that there will be significant reduction in anxiety in both human CBT therapy and AI ChatGPT therapy. The wellbeing equivalence hypothesis predicts there will be significant difference in wellbeing after treatment for both the CBT therapy and AI ChatGPT therapy groups. Lastly, the alliance equivalence hypothesis predicts there will be no significant difference in therapeutic alliance between the human CBT therapy and AI ChatGPT therapy.
 
 **Importance of Research and Proposed Results**
 

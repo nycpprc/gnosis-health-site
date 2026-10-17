@@ -143,7 +143,7 @@ Project MATCH Research Group. (1998). Matching alcoholism treatments to client h
 
 Schwartz, E. K., Wolkowicz, N. R., De Aquino, J. P., MacLean, R. R., & Sofuoglu, M. (2022). Cocaine Use Disorder (CUD): Current Clinical Perspectives. *Substance Abuse and Rehabilitation, 13*, 25–46. <https://doi.org/10.2147/SAR.S337338>
 
-Substance Abuse and Mental Health Services Administration. (2023). Key substance use and mental health indicators in the United States: Results from the 2022 National Survey on Drug Use and Health (HHS Publication No. PEP23-07-01-006, NSDUH Series H-58). Center for Behavioral Health Statistics and Quality, Substance Abuse and Mental Health Services Administration.<https://www.samhsa.gov/data/report/2022-nsduh-annual-national-report>
+Substance Abuse and Mental Health Services Administration. (2023). Key substance use and mental health indicators in the United States: Results from the 2022 National Survey on Drug Use and Health (HHS Publication No. PEP23-07-01-006, NSDUH Series H-58). Center for Behavioral Health Statistics and Quality, Substance Abuse and Mental Health Services Administration. <https://www.samhsa.gov/data/report/2022-nsduh-annual-national-report>
 
 U.S. Department of Health and Human Services. (2016). Facing Addiction in America: The Surgeon General’s Report on Alcohol, Drugs, and Health. Washington, DC: HHS, November 2016.
 

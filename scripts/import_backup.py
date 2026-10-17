@@ -7,6 +7,11 @@ Usage:  python scripts/import_backup.py /path/to/gnosis-backup
 * Writes content/pages/*.md (+ images)
 * Cleans Squarespace leftovers (duplicate featured image, newsletter block,
   indented paragraphs that Markdown would treat as code, filename alt text).
+* KNOWN SOURCE DEFECT (fixed by hand in content/, now guarded by the "possible lost spaces" warning in
+  build.py): the backup's HTML->Markdown step (markdownify in gnosis-backup/scripts/build_backup.py) drops
+  whitespace-only inline elements such as `<strong> </strong>` and strips a trailing space/&nbsp; inside
+  `<a>` text, gluing words together ("influences.Parents", "from“Situated"). If you ever re-import, run
+  build.py and check its stderr for lost-space warnings.
 Originals are NOT copied: images are resized to max 1600px wide WebP.
 """
 import csv, hashlib, re, shutil, sys

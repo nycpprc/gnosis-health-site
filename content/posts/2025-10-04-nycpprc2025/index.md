@@ -80,234 +80,234 @@ Each session has **its own RSVP link** below — **please RSVP to each talk indi
 - **Temperature Alert:** AC may be chilly — bring a jacket!
 - **Photos:** Share your experience using **#nycpprc2025**
 
-![](images/whatsapp-image-2025-09-28-at-07-26-53.webp)
+![Conference photo 1](images/whatsapp-image-2025-09-28-at-07-26-53.webp)
 
-![](images/whatsapp-image-2025-09-28-at-07-26-53-1.webp)
+![Conference photo 2](images/whatsapp-image-2025-09-28-at-07-26-53-1.webp)
 
-![](images/whatsapp-image-2025-09-28-at-07-26-52.webp)
+![Conference photo 3](images/whatsapp-image-2025-09-28-at-07-26-52.webp)
 
-![](images/whatsapp-image-2025-09-28-at-07-26-52-2.webp)
+![Conference photo 4](images/whatsapp-image-2025-09-28-at-07-26-52-2.webp)
 
-![](images/whatsapp-image-2025-09-28-at-07-26-52-1.webp)
+![Conference photo 5](images/whatsapp-image-2025-09-28-at-07-26-52-1.webp)
 
-![](images/img-20250927-172454-055.webp)
+![Conference photo 6](images/img-20250927-172454-055.webp)
 
-![](images/img-20250927-172352-679.webp)
+![Conference photo 7](images/img-20250927-172352-679.webp)
 
-![](images/img-20250927-171814-043.webp)
+![Conference photo 8](images/img-20250927-171814-043.webp)
 
-![](images/img-20250927-171810-062.webp)
+![Conference photo 9](images/img-20250927-171810-062.webp)
 
-![](images/img-20250927-171511-266.webp)
+![Conference photo 10](images/img-20250927-171511-266.webp)
 
-![](images/img-20250927-171505-061.webp)
+![Conference photo 11](images/img-20250927-171505-061.webp)
 
-![](images/img-20250927-170332-599.webp)
+![Conference photo 12](images/img-20250927-170332-599.webp)
 
-![](images/img-20250927-170331-118.webp)
+![Conference photo 13](images/img-20250927-170331-118.webp)
 
-![](images/img-20250927-170226-633.webp)
+![Conference photo 14](images/img-20250927-170226-633.webp)
 
-![](images/img-20250927-170221-793.webp)
+![Conference photo 15](images/img-20250927-170221-793.webp)
 
-![](images/img-20250927-170049-791.webp)
+![Conference photo 16](images/img-20250927-170049-791.webp)
 
-![](images/img-20250927-170029-483.webp)
+![Conference photo 17](images/img-20250927-170029-483.webp)
 
-![](images/img-20250927-170025-540.webp)
+![Conference photo 18](images/img-20250927-170025-540.webp)
 
-![](images/img-20250927-170022-283.webp)
+![Conference photo 19](images/img-20250927-170022-283.webp)
 
-![](images/img-20250927-170019-448.webp)
+![Conference photo 20](images/img-20250927-170019-448.webp)
 
-![](images/img-20250927-163549-292.webp)
+![Conference photo 21](images/img-20250927-163549-292.webp)
 
-![](images/img-20250927-162911-648.webp)
+![Conference photo 22](images/img-20250927-162911-648.webp)
 
-![](images/img-20250927-162536-703.webp)
+![Conference photo 23](images/img-20250927-162536-703.webp)
 
-![](images/img-20250927-162526-222.webp)
+![Conference photo 24](images/img-20250927-162526-222.webp)
 
-![](images/img-20250927-162522-752.webp)
+![Conference photo 25](images/img-20250927-162522-752.webp)
 
-![](images/img-20250927-161747-755.webp)
+![Conference photo 26](images/img-20250927-161747-755.webp)
 
-![](images/img-20250927-161733-022.webp)
+![Conference photo 27](images/img-20250927-161733-022.webp)
 
-![](images/img-20250927-161552-745.webp)
+![Conference photo 28](images/img-20250927-161552-745.webp)
 
-![](images/img-20250927-161541-555.webp)
+![Conference photo 29](images/img-20250927-161541-555.webp)
 
-![](images/img-20250927-154837-773.webp)
+![Conference photo 30](images/img-20250927-154837-773.webp)
 
-![](images/img-20250927-154047-549.webp)
+![Conference photo 31](images/img-20250927-154047-549.webp)
 
-![](images/img-20250927-153631-870.webp)
+![Conference photo 32](images/img-20250927-153631-870.webp)
 
-![](images/img-20250927-153424-532.webp)
+![Conference photo 33](images/img-20250927-153424-532.webp)
 
-![](images/img-20250927-153421-566.webp)
+![Conference photo 34](images/img-20250927-153421-566.webp)
 
-![](images/img-20250927-153249-622.webp)
+![Conference photo 35](images/img-20250927-153249-622.webp)
 
-![](images/img-20250927-153206-789.webp)
+![Conference photo 36](images/img-20250927-153206-789.webp)
 
-![](images/img-20250927-153155-104.webp)
+![Conference photo 37](images/img-20250927-153155-104.webp)
 
-![](images/img-20250927-153152-303.webp)
+![Conference photo 38](images/img-20250927-153152-303.webp)
 
-![](images/img-20250927-153120-719.webp)
+![Conference photo 39](images/img-20250927-153120-719.webp)
 
-![](images/img-20250927-153114-074.webp)
+![Conference photo 40](images/img-20250927-153114-074.webp)
 
-![](images/img-20250927-153101-279.webp)
+![Conference photo 41](images/img-20250927-153101-279.webp)
 
-![](images/img-20250927-153057-979.webp)
+![Conference photo 42](images/img-20250927-153057-979.webp)
 
-![](images/img-20250927-150022-786.webp)
+![Conference photo 43](images/img-20250927-150022-786.webp)
 
-![](images/img-20250927-144954-003.webp)
+![Conference photo 44](images/img-20250927-144954-003.webp)
 
-![](images/img-20250927-144949-703.webp)
+![Conference photo 45](images/img-20250927-144949-703.webp)
 
-![](images/img-20250927-144947-291.webp)
+![Conference photo 46](images/img-20250927-144947-291.webp)
 
-![](images/img-20250927-144633-883.webp)
+![Conference photo 47](images/img-20250927-144633-883.webp)
 
-![](images/img-20250927-144630-789.webp)
+![Conference photo 48](images/img-20250927-144630-789.webp)
 
-![](images/img-20250927-144622-960.webp)
+![Conference photo 49](images/img-20250927-144622-960.webp)
 
-![](images/img-20250927-144619-003.webp)
+![Conference photo 50](images/img-20250927-144619-003.webp)
 
-![](images/img-20250927-144618-076.webp)
+![Conference photo 51](images/img-20250927-144618-076.webp)
 
-![](images/img-20250927-144600-473.webp)
+![Conference photo 52](images/img-20250927-144600-473.webp)
 
-![](images/img-20250927-144559-317.webp)
+![Conference photo 53](images/img-20250927-144559-317.webp)
 
-![](images/img-20250927-142129-923.webp)
+![Conference photo 54](images/img-20250927-142129-923.webp)
 
-![](images/img-20250927-140739-521.webp)
+![Conference photo 55](images/img-20250927-140739-521.webp)
 
-![](images/img-20250927-140735-095.webp)
+![Conference photo 56](images/img-20250927-140735-095.webp)
 
-![](images/img-20250927-140733-345.webp)
+![Conference photo 57](images/img-20250927-140733-345.webp)
 
-![](images/img-20250927-140136-663.webp)
+![Conference photo 58](images/img-20250927-140136-663.webp)
 
-![](images/img-20250927-140132-867.webp)
+![Conference photo 59](images/img-20250927-140132-867.webp)
 
-![](images/img-20250927-140127-621.webp)
+![Conference photo 60](images/img-20250927-140127-621.webp)
 
-![](images/img-20250927-140042-481.webp)
+![Conference photo 61](images/img-20250927-140042-481.webp)
 
-![](images/img-20250927-140039-666.webp)
+![Conference photo 62](images/img-20250927-140039-666.webp)
 
-![](images/img-20250927-140032-088.webp)
+![Conference photo 63](images/img-20250927-140032-088.webp)
 
-![](images/img-20250927-140024-894.webp)
+![Conference photo 64](images/img-20250927-140024-894.webp)
 
-![](images/img-20250927-140022-960.webp)
+![Conference photo 65](images/img-20250927-140022-960.webp)
 
-![](images/img-20250927-140018-460.webp)
+![Conference photo 66](images/img-20250927-140018-460.webp)
 
-![](images/img-20250927-134153-029.webp)
+![Conference photo 67](images/img-20250927-134153-029.webp)
 
-![](images/img-20250927-132006-554.webp)
+![Conference photo 68](images/img-20250927-132006-554.webp)
 
-![](images/img-20250927-132003-262.webp)
+![Conference photo 69](images/img-20250927-132003-262.webp)
 
-![](images/img-20250927-131343-735.webp)
+![Conference photo 70](images/img-20250927-131343-735.webp)
 
-![](images/img-20250927-130947-061.webp)
+![Conference photo 71](images/img-20250927-130947-061.webp)
 
-![](images/img-20250927-130942-600.webp)
+![Conference photo 72](images/img-20250927-130942-600.webp)
 
-![](images/img-20250927-130611-064.webp)
+![Conference photo 73](images/img-20250927-130611-064.webp)
 
-![](images/img-20250927-130609-131.webp)
+![Conference photo 74](images/img-20250927-130609-131.webp)
 
-![](images/img-20250927-130603-590.webp)
+![Conference photo 75](images/img-20250927-130603-590.webp)
 
-![](images/img-20250927-130557-779.webp)
+![Conference photo 76](images/img-20250927-130557-779.webp)
 
-![](images/img-20250927-130541-383.webp)
+![Conference photo 77](images/img-20250927-130541-383.webp)
 
-![](images/img-20250927-130538-376.webp)
+![Conference photo 78](images/img-20250927-130538-376.webp)
 
-![](images/img-20250927-130534-959.webp)
+![Conference photo 79](images/img-20250927-130534-959.webp)
 
-![](images/img-20250927-130530-942.webp)
+![Conference photo 80](images/img-20250927-130530-942.webp)
 
-![](images/img-20250927-105512-852.webp)
+![Conference photo 81](images/img-20250927-105512-852.webp)
 
-![](images/img-20250927-105509-054.webp)
+![Conference photo 82](images/img-20250927-105509-054.webp)
 
-![](images/img-20250927-105505-435.webp)
+![Conference photo 83](images/img-20250927-105505-435.webp)
 
-![](images/img-20250927-104941-222.webp)
+![Conference photo 84](images/img-20250927-104941-222.webp)
 
-![](images/img-20250927-104939-389.webp)
+![Conference photo 85](images/img-20250927-104939-389.webp)
 
-![](images/img-20250927-104931-155.webp)
+![Conference photo 86](images/img-20250927-104931-155.webp)
 
-![](images/img-20250927-104726-633.webp)
+![Conference photo 87](images/img-20250927-104726-633.webp)
 
-![](images/img-20250927-104723-694.webp)
+![Conference photo 88](images/img-20250927-104723-694.webp)
 
-![](images/img-20250927-104706-879.webp)
+![Conference photo 89](images/img-20250927-104706-879.webp)
 
-![](images/img-20250927-104626-422.webp)
+![Conference photo 90](images/img-20250927-104626-422.webp)
 
-![](images/img-20250927-104623-553.webp)
+![Conference photo 91](images/img-20250927-104623-553.webp)
 
-![](images/img-20250927-104620-174.webp)
+![Conference photo 92](images/img-20250927-104620-174.webp)
 
-![](images/img-20250927-102830-145.webp)
+![Conference photo 93](images/img-20250927-102830-145.webp)
 
-![](images/img-20250927-102829-325.webp)
+![Conference photo 94](images/img-20250927-102829-325.webp)
 
-![](images/img-20250927-102826-047.webp)
+![Conference photo 95](images/img-20250927-102826-047.webp)
 
-![](images/img-20250927-102820-826.webp)
+![Conference photo 96](images/img-20250927-102820-826.webp)
 
-![](images/img-20250927-101704-858.webp)
+![Conference photo 97](images/img-20250927-101704-858.webp)
 
-![](images/img-20250927-101202-191.webp)
+![Conference photo 98](images/img-20250927-101202-191.webp)
 
-![](images/img-20250927-101158-618.webp)
+![Conference photo 99](images/img-20250927-101158-618.webp)
 
-![](images/img-20250927-100950-858.webp)
+![Conference photo 100](images/img-20250927-100950-858.webp)
 
-![](images/img-20250927-100948-539.webp)
+![Conference photo 101](images/img-20250927-100948-539.webp)
 
-![](images/img-20250927-100607-349.webp)
+![Conference photo 102](images/img-20250927-100607-349.webp)
 
-![](images/img-20250927-100605-971.webp)
+![Conference photo 103](images/img-20250927-100605-971.webp)
 
-![](images/img-20250927-100604-582.webp)
+![Conference photo 104](images/img-20250927-100604-582.webp)
 
-![](images/img-20250927-100602-723.webp)
+![Conference photo 105](images/img-20250927-100602-723.webp)
 
-![](images/img-20250927-100555-676.webp)
+![Conference photo 106](images/img-20250927-100555-676.webp)
 
-![](images/img-20250927-100548-985.webp)
+![Conference photo 107](images/img-20250927-100548-985.webp)
 
-![](images/img-20250927-100546-163.webp)
+![Conference photo 108](images/img-20250927-100546-163.webp)
 
-![](images/img-20250927-100341-693.webp)
+![Conference photo 109](images/img-20250927-100341-693.webp)
 
-![](images/img-20250927-100337-422.webp)
+![Conference photo 110](images/img-20250927-100337-422.webp)
 
-![](images/img-20250927-100336-118.webp)
+![Conference photo 111](images/img-20250927-100336-118.webp)
 
-![](images/img-20250927-100329-704.webp)
+![Conference photo 112](images/img-20250927-100329-704.webp)
 
-![](images/img-20250927-100327-312.webp)
+![Conference photo 113](images/img-20250927-100327-312.webp)
 
-![](images/img-20250927-100322-606.webp)
+![Conference photo 114](images/img-20250927-100322-606.webp)
 
-![](images/img-20250927-100314-369.webp)
+![Conference photo 115](images/img-20250927-100314-369.webp)
 
-![](images/img-20250927-100310-763.webp)
+![Conference photo 116](images/img-20250927-100310-763.webp)

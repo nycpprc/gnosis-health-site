@@ -103,7 +103,7 @@ Rucklidge, J. J., & Tannock, R. (2001). Psychiatric, psychosocial, and cognitive
 
 Still, G. F. (2006). Some abnormal psychical conditions in children: Excerpts From Three Lectures. *Journal of Attention Disorders, 10*(2), 126–136. <https://doi.org/10.1177/1087054706288114>
 
-Waltereit, J., Zimmer, J., Roessner, V., & Waltereit, R. (2023). Family and developmental history of female versus male adolescents with ADHD: diagnosis-specific overlap, few gender/sex differences. *Frontiers in Psychiatry, 14,* 1072735–1072735.<https://doi.org/10.3389/fpsyt.2023.1072735>
+Waltereit, J., Zimmer, J., Roessner, V., & Waltereit, R. (2023). Family and developmental history of female versus male adolescents with ADHD: diagnosis-specific overlap, few gender/sex differences. *Frontiers in Psychiatry, 14,* 1072735–1072735. <https://doi.org/10.3389/fpsyt.2023.1072735>
 
 Wender, P. H., & Eisenberg, L. (1974). Minimal brain dysfunction in children. In S. Arieti & G. Caplan (Eds.), *American Handbook of Psychiatry*: Volume 2. Basic Books. (p. 23)
 

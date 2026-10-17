@@ -116,9 +116,25 @@ def make_excerpt(h, title="", n=190):
     return ""
 
 
+RUN_TOGETHER = re.compile(r"[a-z\)\u201d\"'\u2019][.!?][A-Z\u201c\"][a-z]")
+
+
+def run_together(h):
+    """Words glued across a sentence end ("influences.Parents"): the signature of a lost space.
+
+    Squarespace -> Markdown conversion drops whitespace-only inline elements (<strong> </strong>) and
+    trailing spaces inside links, which silently glues neighbouring words/links together.
+    """
+    h = re.sub(r"<(audio|figcaption)\b.*?</\1>", " ", h, flags=re.S)
+    t = html.unescape(re.sub(r"<[^>]+>", "", h))
+    t = re.sub(r"https?://\S+", "URL", t)
+    return [t[max(0, m.start() - 20): m.end() + 10].replace("\n", " ") for m in RUN_TOGETHER.finditer(t)]
+
+
 IMG_EXT = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tif", ".tiff", ".heic"}
 IMG_INFO = {}        # output path -> (w, h)
 BROKEN = []          # (page, ref)
+SPACING = []         # (page, context) possible lost spaces
 
 
 def save_webp(im, dst, q=76):
@@ -334,6 +350,14 @@ def finish_images(h, src_dir: Path, out_dir: Path, page_label: str):
     return h
 
 
+def gallery_ratios(h):
+    """Give each gallery <figure> its image's aspect ratio (--ar) so CSS can lay out even rows without cropping."""
+    def sub(m):
+        w, hh = int(m.group(2)), int(m.group(3))
+        return f'<figure style="--ar:{w / hh:.3f}">{m.group(1)}'
+    return re.sub(r'<figure>((?:<a [^>]*>\s*)?<img [^>]*?width="(\d+)" height="(\d+)"[^>]*>)', sub, h)
+
+
 def render_md(body, src_dir, out_dir, label, known_paths, alias_map=None):
     md = new_md()
     h = md.convert(body)
@@ -343,6 +367,7 @@ def render_md(body, src_dir, out_dir, label, known_paths, alias_map=None):
     h = group_images(h)
     h = fix_links(h, known_paths, alias_map)
     h = finish_images(h, src_dir, out_dir, label)
+    h = gallery_ratios(h)
     return h
 
 
@@ -453,6 +478,8 @@ def main():
                 o.thumbnail((OG_W, OG_W), Image.LANCZOS)
                 o.save(out_dir / "og.jpg", "JPEG", quality=82, optimize=True)
                 p["og"] = "og.jpg"
+        for ctx in run_together(p["html"]):
+            SPACING.append((label, ctx))
         p["alt_missing"] = len(re.findall(r'<img alt=""', p["html"]))
 
     # ---- post pages
@@ -537,6 +564,10 @@ def main():
                    base_path=BASE, origin=ORIGIN, noindex=CFG["noindex"], broken_refs=BROKEN,
                    posts_missing_alt=sum(p["alt_missing"] for p in posts))
     print(json.dumps(summary, indent=1, ensure_ascii=False))
+    if SPACING:
+        print("WARNING: possible lost spaces (words run together):", file=sys.stderr)
+        for label, ctx in SPACING:
+            print(f"  {label}: ...{ctx}...", file=sys.stderr)
     if BROKEN:
         print("WARNING: broken local references (see above)", file=sys.stderr)
 
