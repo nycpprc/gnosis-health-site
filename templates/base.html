@@ -26,8 +26,7 @@
 <link rel="preload" href="{{ U('/assets/fonts/EBGaramond-normal-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ A('/assets/css/fonts.css') }}">
 <link rel="stylesheet" href="{{ A('/assets/css/site.css') }}">
-{% if ga_id %}<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});</script>
-{% endif %}{% block head %}{% endblock %}
+{% block head %}{% endblock %}
 </head>
 <body class="{% block bodyclass %}{% endblock %}">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -86,16 +85,7 @@
     <p>© {{ year }} {{ cfg.author }}. All rights reserved.{% if ga_id %} · <a href="{{ U('/privacy/') }}">Privacy</a>{% endif %}</p>
   </div>
 </footer>
-{% if ga_id %}
-<div class="consent" id="consent" role="region" aria-label="Analytics consent" hidden>
-  <p class="consent__text">I’d like to count visits with Google Analytics, only if you’re okay with it. No ads, no personal data. <a href="{{ U('/privacy/') }}">Details</a></p>
-  <div class="consent__actions">
-    <button type="button" class="consent__btn consent__btn--accept" data-consent="granted">Accept</button>
-    <button type="button" class="consent__btn" data-consent="denied">Decline</button>
-  </div>
-</div>
-<script src="{{ A('/assets/js/consent.js') }}" data-ga-id="{{ ga_id }}" defer></script>
-{% endif %}
+{% if ga_id %}<script src="{{ A('/assets/js/analytics.js') }}" data-ga-id="{{ ga_id }}" async></script>{% endif %}
 {% block scripts %}{% endblock %}
 </body>
 </html>

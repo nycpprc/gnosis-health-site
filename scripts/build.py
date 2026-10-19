@@ -429,8 +429,8 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
-    if not GA_ID:                           # analytics disabled: ship no consent code at all
-        (OUT / "assets" / "js" / "consent.js").unlink(missing_ok=True)
+    if not GA_ID:                           # analytics disabled: ship no analytics code at all
+        (OUT / "assets" / "js" / "analytics.js").unlink(missing_ok=True)
     for f in ("favicon.ico", "favicon.svg", "apple-touch-icon.png"):
         if (ROOT / "assets" / "icons" / f).exists():
             shutil.copy2(ROOT / "assets" / "icons" / f, OUT / f)
@@ -510,7 +510,7 @@ def main():
             "about": "About Ryan Bohman and Gnosis Health: counseling, research, and philosophy book clubs.",
             "contact": "Contact Ryan Bohman at Gnosis Health in Rochester, NY.",
             "doing-business": "Working together: Ryan Bohman's interests in mental health and technology ventures, plus his resume.",
-            "privacy": "Privacy: this site counts visits with Google Analytics only if you accept. No ads, no personal data collected.",
+            "privacy": "Privacy: this site counts visits with Google Analytics. No ads, no Google signals, nothing sold or shared. Turn it off any time.",
         }[slug]
         nav = {"about": "about", "contact": "contact", "doing-business": "work", "privacy": None}[slug]
         write(f"/{slug}/index.html", env.get_template("page.html").render(

@@ -4,14 +4,17 @@ slug: privacy
 heading: Privacy.
 ---
 
-This site uses Google Analytics to count visits, but only if you choose **Accept** on the notice at the bottom of the page.
-There are no ads, no advertising or personalization features, and no personal data is collected by me.
-If you choose **Decline** (or your browser sends a Global Privacy Control signal), no analytics code is loaded at all.
+This site uses Google Analytics to count visits: which pages are viewed, roughly where in the world a visit comes from, and the type of device and browser. I use it only to see which writing gets read.
 
-What accepting does: Google Analytics sets cookies and records which pages are viewed, roughly where in the world a visit comes from, and the type of browser or device. Google processes this data on my behalf. I use it only to see which writing gets read.
+There are no ads, no ad personalization, and Google signals are off. I don’t sell or share this data.
 
-Your choice is remembered in your browser (local storage) and is never sent anywhere.
+If your browser sends a Global Privacy Control or Do Not Track signal, analytics is not loaded at all.
 
-<p><button type="button" class="btn btn--ghost-ink" data-consent-reset>Change my choice</button></p>
+You can also turn it off for this browser below. The choice is stored in your browser only.
+
+<div data-analytics-controls>
+<p data-analytics-status>Analytics status needs JavaScript to show.</p>
+<p><button type="button" class="btn btn--ghost-ink" data-analytics-off hidden>Turn off analytics on this browser</button><button type="button" class="btn btn--ghost-ink" data-analytics-on hidden>Turn analytics back on</button></p>
+</div>
 
 Questions: <ryan@gnosis.health>

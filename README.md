@@ -102,11 +102,12 @@ Pages is configured with *Source: GitHub Actions* (Settings → Pages). Re-run m
 Note: GitHub Pages serves `/blog/slug/` and 301-redirects `/blog/slug` to it, so every old Squarespace URL keeps working.
 GitHub Pages cannot do server-side redirects; the renamed posts use meta-refresh + canonical stubs.
 
-## Analytics (Google Analytics 4, optional, consent-gated)
+## Analytics (Google Analytics 4, optional, on by default with opt-out)
 
-Set `"ga_measurement_id": "G-XXXXXXXXXX"` in `config.json` (or env `GA_MEASUREMENT_ID`). Empty (the default) emits **no** analytics code, no consent notice, no `/privacy/` page and no footer link.
-When set: Consent Mode defaults to *denied*; a small Accept/Decline notice is shown; `gtag.js` is requested **only after Accept** (choice kept in `localStorage["gh-analytics"]`, Global Privacy Control counts as Decline). Config uses `allow_google_signals: false` and `allow_ad_personalization_signals: false`.
-`/privacy/` (`content/pages/privacy.md`) explains it and has a "Change my choice" button. Code: `assets/js/consent.js`, `templates/base.html`, consent styles at the end of `assets/css/site.css`.
+Set `"ga_measurement_id": "G-XXXXXXXXXX"` in `config.json` (or env `GA_MEASUREMENT_ID`). Empty emits **no** analytics code, no `/privacy/` page and no footer link.
+When set: there is no banner. `assets/js/analytics.js` loads `gtag.js` on every page with Consent Mode `analytics_storage: granted`, `ad_storage`/`ad_user_data`/`ad_personalization: denied`, and `allow_google_signals: false`, `allow_ad_personalization_signals: false`.
+It does **not** load when `localStorage["gh-analytics"] === "denied"` (visitor opted out), or the browser sends Global Privacy Control or Do Not Track `1`.
+`/privacy/` (`content/pages/privacy.md`) explains this, shows the current status, and has "Turn off analytics on this browser" / "Turn analytics back on" buttons. Footer links to it.
 
 ## Credits / licences
 
