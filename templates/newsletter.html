@@ -1,0 +1,15 @@
+{% macro newsletter(id="nl", heading="Get new posts by email") %}{% set n = cfg.newsletter %}
+<section class="wrap narrow newsletter" aria-labelledby="{{ id }}-h">
+  <h2 id="{{ id }}-h" class="newsletter__h">{{ heading }}</h2>
+  <form class="newsletter__form" action="{{ n.action }}" method="post" target="_blank">
+    <label for="{{ id }}-fname" class="visually-hidden">First name (optional)</label>
+    <input id="{{ id }}-fname" type="text" name="FNAME" placeholder="First name (optional)" autocomplete="given-name">
+    <label for="{{ id }}-email" class="visually-hidden">Email address</label>
+    <input id="{{ id }}-email" type="email" name="EMAIL" required placeholder="Email address" autocomplete="email">
+    <input type="hidden" name="tags" value="{{ n.tag_id }}">
+    <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="{{ n.honeypot }}" tabindex="-1" value=""></div>
+    <button class="btn newsletter__btn" type="submit">Subscribe</button>
+  </form>
+  <p class="newsletter__note">Get an email when I publish a new post. Unsubscribe anytime.</p>
+</section>
+{% endmacro %}

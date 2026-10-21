@@ -298,3 +298,14 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .btn--ghost-ink[hidden] { display: none; }
 .btn--ghost-ink { color: var(--ink); border: 1.5px solid var(--rule); background: transparent; cursor: pointer; font-size: .9rem; padding: .55rem 1.1rem; }
 .btn--ghost-ink:hover { border-color: var(--accent); }
+
+/* Newsletter signup — understated, centered, no box */
+.newsletter { text-align: center; margin-top: 4.5rem; margin-bottom: 2rem; padding-top: 3rem; border-top: 1px solid var(--rule); }
+.newsletter__h { font-family: var(--serif-head); font-weight: 500; font-size: 1.6rem; color: var(--ink); margin: 0 0 1.2rem; }
+.newsletter__form { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; max-width: 34rem; margin: 0 auto; }
+.newsletter__form input { flex: 1 1 11rem; min-width: 0; font: 1rem var(--sans); color: var(--ink); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: .75rem 1.1rem; }
+.newsletter__form input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.newsletter__btn { background: var(--btn-bg); color: var(--btn-ink); border: 0; cursor: pointer; padding: .75rem 1.4rem; }
+.newsletter__btn:hover { background: var(--accent); }
+.newsletter__note { font-family: var(--sans); font-size: .85rem; color: var(--ink-soft); margin: .9rem 0 0; }
+@media (max-width: 560px) { .newsletter__form input, .newsletter__btn { flex-basis: 100%; } }

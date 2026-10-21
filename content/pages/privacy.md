@@ -8,6 +8,8 @@ This site uses Google Analytics to count visits: which pages are viewed, roughly
 
 There are no ads, no ad personalization, and Google signals are off. I don’t sell or share this data.
 
+Newsletter signups are handled by Mailchimp, which stores your email (and first name, if given) only to send new-post emails.
+
 If your browser sends a Global Privacy Control or Do Not Track signal, analytics is not loaded at all.
 
 You can also turn it off for this browser below. The choice is stored in your browser only.

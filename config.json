@@ -20,5 +20,11 @@
       "place": "Rochester, NY",
       "url": "https://www.meetup.com/philosophy-cafe-in-rochester-ny/"
     }
-  ]
+  ],
+  "newsletter": {
+    "action": "https://art.us13.list-manage.com/subscribe/post?u=26b814ae42c6bb5b260c0ebf5&id=24033953d1",
+    "honeypot": "b_26b814ae42c6bb5b260c0ebf5_24033953d1",
+    "tag_id": "558",
+    "_note": "Mailchimp audience NYCPPRC (24033953d1, us13); tag gnosis-health = 558"
+  }
 }

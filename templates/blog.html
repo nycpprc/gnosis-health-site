@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% from "card.html" import card %}
+{% from "newsletter.html" import newsletter %}
 {% block bodyclass %}blog{% endblock %}
 {% block main %}
 <section class="wrap page-head">
@@ -31,5 +32,6 @@
   </div>
 </div>
 <p class="wrap empty" id="empty" hidden>No posts match that search. Try fewer words, or clear the filters.</p>
+{{ newsletter("nl-blog") }}
 {% endblock %}
 {% block scripts %}<script src="{{ A('/assets/js/filter.js') }}" defer></script>{% endblock %}
