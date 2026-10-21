@@ -1,7 +1,7 @@
 {% macro newsletter(id="nl", heading="Get new posts by email") %}{% set n = cfg.newsletter %}
 <section class="wrap narrow newsletter" aria-labelledby="{{ id }}-h">
   <h2 id="{{ id }}-h" class="newsletter__h">{{ heading }}</h2>
-  <form class="newsletter__form" action="{{ n.action }}" method="post" target="_blank">
+  <form class="newsletter__form" action="{{ n.action }}" method="post">
     <label for="{{ id }}-fname" class="visually-hidden">First name (optional)</label>
     <input id="{{ id }}-fname" type="text" name="FNAME" placeholder="First name (optional)" autocomplete="given-name">
     <label for="{{ id }}-email" class="visually-hidden">Email address</label>
@@ -12,4 +12,5 @@
   </form>
   <p class="newsletter__note">Get an email when I publish a new post. Unsubscribe anytime.</p>
 </section>
+<script src="{{ A('/assets/js/newsletter.js') }}" defer></script>
 {% endmacro %}
