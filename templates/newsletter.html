@@ -1,4 +1,16 @@
-{% macro newsletter(id="nl", heading="Get new posts by email") %}{% set n = cfg.newsletter %}
+{% macro newsletter(id="nl", heading="Get new posts by email", compact=false) %}{% set n = cfg.newsletter %}
+{% if compact %}
+<div class="newsletter-mini">
+  <p class="newsletter-mini__h" id="{{ id }}-h">Get new posts by email</p>
+  <form class="newsletter__form newsletter-mini__form" action="{{ n.action }}" method="post" aria-labelledby="{{ id }}-h">
+    <label for="{{ id }}-email" class="visually-hidden">Email address</label>
+    <input id="{{ id }}-email" type="email" name="EMAIL" required placeholder="Email address" autocomplete="email">
+    <input type="hidden" name="tags" value="{{ n.tag_id }}">
+    <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="{{ n.honeypot }}" tabindex="-1" value=""></div>
+    <button class="btn newsletter__btn" type="submit">Subscribe</button>
+  </form>
+</div>
+{% else %}
 <section class="wrap narrow newsletter" aria-labelledby="{{ id }}-h">
   <h2 id="{{ id }}-h" class="newsletter__h">{{ heading }}</h2>
   <form class="newsletter__form" action="{{ n.action }}" method="post">
@@ -12,5 +24,6 @@
   </form>
   <p class="newsletter__note">Get an email when I publish a new post. Unsubscribe anytime.</p>
 </section>
+{% endif %}
 <script src="{{ A('/assets/js/newsletter.js') }}" defer></script>
 {% endmacro %}

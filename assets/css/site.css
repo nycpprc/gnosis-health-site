@@ -314,3 +314,15 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .newsletter .mc-ok { color: var(--accent-deep); }
 .newsletter .mc-err { color: #B4412F; }
 .newsletter__btn:disabled { opacity: .6; cursor: wait; }
+
+/* Compact newsletter line on the home page, below the hero caption */
+.home-newsletter { text-align: center; padding: 3rem 0 3.5rem; }
+.newsletter-mini { margin: 0 auto; max-width: 26rem; font-family: var(--sans); }
+.newsletter-mini__h { font-size: .9rem; letter-spacing: .02em; color: var(--ink-soft); margin: 0 0 .65rem; }
+.newsletter-mini__form { gap: .45rem; flex-wrap: nowrap; }
+.newsletter-mini__form input { flex: 1 1 auto; font-size: .92rem; padding: .55rem 1rem; }
+.newsletter-mini .newsletter__btn { flex: 0 0 auto; font-size: .88rem; padding: .55rem 1.1rem; }
+.newsletter-mini .mc-status { font-size: .88rem; margin: .6rem 0 0; color: var(--ink); }
+.newsletter-mini .mc-status:empty { display: none; }
+.newsletter-mini .mc-ok { color: var(--accent-deep); }
+.newsletter-mini .mc-err { color: #B4412F; }

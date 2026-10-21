@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "newsletter.html" import newsletter %}
 {% block bodyclass %}home{% endblock %}
 {% block main %}
 <section class="hero" aria-labelledby="hero-title">
@@ -43,6 +44,9 @@
     </blockquote>
   </figure>
 </section>
+<div class="wrap home-newsletter">
+  {{ newsletter("nl-home", compact=true) }}
+</div>
 
 
 {% endblock %}
