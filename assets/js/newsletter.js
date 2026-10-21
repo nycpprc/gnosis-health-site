@@ -18,7 +18,7 @@
       var s=document.createElement('script'),done=false;
       function end(ok,msg){if(done)return;done=true;try{delete window[cb];}catch(x){window[cb]=undefined;}s.remove();clearTimeout(t);
         if(btn)btn.disabled=false;st.textContent=msg;st.className='mc-status '+(ok?'mc-ok':'mc-err');if(ok)f.reset();}
-      window[cb]=function(r){r=r||{};end(r.result==='success',r.result==='success'?"Thanks, you're subscribed.":nice(clean(r.msg)));};
+      window[cb]=function(r){r=r||{};if(r.result==='success'&&typeof window.gtag==='function'){try{var em=f.querySelector('input[type=email]');window.gtag('event','sign_up',{method:'newsletter',form_location:(f.getAttribute('data-form-location')||(em&&em.id||'').replace(/-email$/,'')||location.pathname)});}catch(x){}}end(r.result==='success',r.result==='success'?"Thanks, you're subscribed.":nice(clean(r.msg)));};
       var t=setTimeout(function(){end(false,'Could not reach the signup service. Please try again.');},12000);
       s.onerror=function(){end(false,'Could not reach the signup service. Please try again.');};
       if(btn)btn.disabled=true;st.className='mc-status';st.textContent='Subscribing…';
