@@ -532,7 +532,8 @@ def main():
     # legacy / likely-mistyped URLs (old Squarespace paths, capitalized nav links) -> redirect stubs
     legacy = {"/Home": "/", "/cart": "/", "/About": "/about/", "/Blog": "/blog/", "/Contact": "/contact/",
               "/resume": "/doing-business/", "/feed": "/blog/", "/rss": "/blog/", "/blog/feed": "/blog/",
-              "/blog/tag": "/blog/", "/blog/category": "/blog/"}
+              "/blog/tag": "/blog/", "/blog/category": "/blog/",
+              "/philosotherapy": "/blog/", "/feature-single": "/"}
     for t in sorted({t for p in posts for t in p["tags"]}):
         slug = re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
         if slug:
