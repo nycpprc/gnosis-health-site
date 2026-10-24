@@ -529,6 +529,19 @@ def main():
     for old_home in ("/home", "/home-1"):
         write(f"{old_home}/index.html", env.get_template("redirect.html").render(target=ABS("/"), target_rel=U("/"), title="Redirecting…", description="", canonical=ABS("/"), og_image=None, og_type="website", nav=None))
 
+    # legacy / likely-mistyped URLs (old Squarespace paths, capitalized nav links) -> redirect stubs
+    legacy = {"/Home": "/", "/cart": "/", "/About": "/about/", "/Blog": "/blog/", "/Contact": "/contact/",
+              "/resume": "/doing-business/", "/feed": "/blog/", "/rss": "/blog/", "/blog/feed": "/blog/",
+              "/blog/tag": "/blog/", "/blog/category": "/blog/"}
+    for t in sorted({t for p in posts for t in p["tags"]}):
+        slug = re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
+        if slug:
+            legacy.setdefault(f"/blog/tag/{slug}", "/blog/")
+            legacy.setdefault(f"/blog/category/{slug}", "/blog/")
+    for old, new in legacy.items():
+        if not (OUT / old.lstrip("/") / "index.html").exists():
+            write(f"{old}/index.html", env.get_template("redirect.html").render(target=ABS(new), target_rel=U(new), title="Redirecting…", description="", canonical=ABS(new), og_image=None, og_type="website", nav=None))
+
     # blog index
     years = sorted({p["year"] for p in posts}, reverse=True)
     all_tags = sorted({t for p in posts for t in p["tags"]})
